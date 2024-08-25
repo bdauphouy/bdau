@@ -1,3 +1,4 @@
+import type { PageContent } from '$lib/types';
 import fs from 'node:fs';
 import path from 'node:path';
 import type { PageServerLoad } from './$types';
@@ -25,7 +26,7 @@ export const load: PageServerLoad = async ({ request, fetch }) => {
 	}
 
 	const response = await fetch(`/api/content?lang=${lang}`);
-	const content = await response.json();
+	const content: PageContent = await response.json();
 
 	return { content };
 };
