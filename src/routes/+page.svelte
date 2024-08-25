@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Button from '$lib/components/button.svelte';
 	import Project from '$lib/components/project.svelte';
+	import ResumeSpinner from '$lib/components/resume-spinner.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -10,6 +11,9 @@
 	<h1 class="text-6xl font-medium leading-tight md:whitespace-pre">
 		{data.content.landing.title}
 	</h1>
+	<div class="absolute right-6 top-10 md:right-12">
+		<ResumeSpinner url="/resumes/{data.lang}.pdf" text={data.content.landing.resume.title} />
+	</div>
 </section>
 
 <section class="py-32">

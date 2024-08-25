@@ -1,6 +1,10 @@
 {
 	"landing": {
-		"title": "Hola,\nSoy Baptiste Dauphouy,\ndesarrollador full-stack."
+		"title": "Hola,\nSoy Baptiste Dauphouy,\ndesarrollador full-stack.",
+		"resume": {
+			"title": "Descargar mi CV",
+			"url": "/cv"
+		}
 	},
 	"projects": [
 		{

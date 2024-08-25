@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import Header from '$lib/components/header.svelte';
+	import type { Lang } from '$lib/types';
 	import { onMount } from 'svelte';
 	import '../app.css';
 	import type { PageData } from './$types';
@@ -8,7 +9,7 @@
 	export let data: PageData;
 
 	onMount(() => {
-		const lang = localStorage.getItem('lang');
+		const lang = localStorage.getItem('lang') as Lang | null;
 
 		if (lang && lang !== data.lang) {
 			data.lang = lang;
@@ -20,6 +21,6 @@
 
 <Header languages={data.languages} lang={data.lang} />
 
-<main class="mx-auto max-w-7xl px-6 py-10 md:px-12">
+<main class="relative mx-auto max-w-7xl px-6 py-10 md:px-12">
 	<slot />
 </main>

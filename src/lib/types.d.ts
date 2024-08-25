@@ -12,6 +12,10 @@ export type Project = {
 export type PageContent = {
 	landing: {
 		title: string;
+		resume: {
+			title: string;
+			url: string;
+		};
 	};
 	projects: Project[];
 	contact: {
