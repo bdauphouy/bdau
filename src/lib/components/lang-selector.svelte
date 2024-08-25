@@ -14,7 +14,7 @@
 	};
 </script>
 
-<select on:change={handleChange} class="bg-transparent">
+<select on:change={handleChange} class="rounded-full bg-transparent">
 	{#each options as option}
 		<option value={option} selected={defaultOption === option}>{option}</option>
 	{/each}

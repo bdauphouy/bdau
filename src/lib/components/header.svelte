@@ -13,8 +13,8 @@
 </script>
 
 <header class="mx-auto flex max-w-7xl items-start justify-between px-6 pt-10 md:px-12">
-	<a href="/">
-		<img src="/images/logo.png" alt="Baptiste Dauphouy" class="h-16 w-16 rounded-full" />
+	<a href="/" class="overflow-hidden rounded-full">
+		<img src="/images/logo.png" alt="Baptiste Dauphouy" class="h-16 w-16" />
 	</a>
 	<LangSelector options={languages} defaultOption={lang} on:change={handleLangChange} />
 </header>

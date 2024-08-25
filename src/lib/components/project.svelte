@@ -10,13 +10,13 @@
 	<div class="relative bg-primary">
 		{#if project.badgeText}
 			<div
-				class="absolute right-0 top-0 z-10 m-3 opacity-100 transition-opacity duration-300 group-hover:opacity-0"
+				class="absolute right-0 top-0 z-10 m-3 opacity-100 transition-opacity duration-300 group-focus-within:opacity-0 group-hover:opacity-0"
 			>
 				<Badge>{project.badgeText}</Badge>
 			</div>
 		{/if}
 		<img
-			class="transition-all duration-300 group-hover:opacity-25 group-hover:blur-sm"
+			class="transition-all duration-300 group-focus-within:opacity-25 group-focus-within:blur-sm group-hover:opacity-25 group-hover:blur-sm"
 			src="/images/projects/{project.handle}.png"
 			alt={project.title}
 		/>
