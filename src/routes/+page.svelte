@@ -1,14 +1,9 @@
 <script lang="ts">
-	import Header from '$lib/components/header.svelte';
 	import Project from '$lib/components/project.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-
-	console.log(data.content.projects);
 </script>
-
-<Header />
 
 <section class="flex justify-start py-32 md:justify-center">
 	<h1 class="text-6xl font-medium leading-tight md:whitespace-pre">
