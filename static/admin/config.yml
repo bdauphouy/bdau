@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: bdauphouy/bdau.fr
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+
+site_url: https://bdau.fr
+
+publish_mode: editorial_workflow
+media_folder: 'static/content/uploads'
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'static/content/blog'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
