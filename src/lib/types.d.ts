@@ -11,3 +11,5 @@ export type PageContent = {
 	title: string;
 	projects: Project[];
 };
+
+export type Lang = 'en' | 'fr' | 'es';

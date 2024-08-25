@@ -1,16 +1,16 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import yaml from 'yaml';
+import type { Lang, PageContent } from '$lib/types';
+import en from '$static/content/en.json';
+import es from '$static/content/es.json';
+import fr from '$static/content/fr.json';
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async ({ request, url }) => {
-	const langSearchParam = url.searchParams.get('lang');
+	const langSearchParam = url.searchParams.get('lang') as Lang | null;
 
-	const languages = fs
-		.readdirSync(path.resolve('static/content/'))
-		.map((file) => file.replace('.yml', ''));
+	const files: Record<Lang, PageContent> = { en, fr, es };
+	const languages = Object.keys(files);
 
-	let lang = languages[0];
+	let lang: Lang = 'en';
 
 	if (langSearchParam && languages.includes(langSearchParam)) {
 		lang = langSearchParam;
@@ -20,7 +20,7 @@ export const load: LayoutServerLoad = async ({ request, url }) => {
 		if (acceptLanguageHeader) {
 			const parsedAcceptLanguage = acceptLanguageHeader
 				.split(',')
-				.map((lang) => ({ language: lang.split(';q=')[0] }));
+				.map((lang) => ({ language: lang.split(';q=')[0] })) as { language: Lang }[];
 
 			for (const { language } of parsedAcceptLanguage) {
 				if (languages.includes(language)) {
@@ -31,8 +31,5 @@ export const load: LayoutServerLoad = async ({ request, url }) => {
 		}
 	}
 
-	const rawYamlContent = fs.readFileSync(path.resolve(`static/content/${lang}.yml`), 'utf8');
-	const parsedYamlContent = yaml.parse(rawYamlContent);
-
-	return { content: parsedYamlContent, languages, lang };
+	return { content: files[lang], languages, lang };
 };
