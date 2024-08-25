@@ -1,9 +1,9 @@
-import type { PageContent } from '$lib/types';
 import fs from 'node:fs';
 import path from 'node:path';
+import yaml from 'yaml';
 import type { LayoutServerLoad } from './$types';
 
-export const load: LayoutServerLoad = async ({ request, url, fetch }) => {
+export const load: LayoutServerLoad = async ({ request, url }) => {
 	const langSearchParam = url.searchParams.get('lang');
 
 	const languages = fs
@@ -31,8 +31,8 @@ export const load: LayoutServerLoad = async ({ request, url, fetch }) => {
 		}
 	}
 
-	const response = await fetch(`/api/content?lang=${lang}`);
-	const content: PageContent = await response.json();
+	const rawYamlContent = fs.readFileSync(path.resolve(`static/content/${lang}.yml`), 'utf8');
+	const parsedYamlContent = yaml.parse(rawYamlContent);
 
-	return { content, languages, lang };
+	return { content: parsedYamlContent, languages, lang };
 };
