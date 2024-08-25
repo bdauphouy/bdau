@@ -1,11 +1,11 @@
 {
-	"title": "Hello,\nJe suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
+	"title": "Hello,\nI am Baptiste Dauphouy,\nfull-stack developer.",
 	"projects": [
 		{
 			"title": "Shopiette",
 			"handle": "shopiette",
 			"description": "Créez rapidement des sites e-commerce avec Svelte.",
-			"badgeText": "Travail en cours",
+			"badgeText": "Work in progress",
 			"githubUrl": "https://github.com/bdauphouy/shopiette",
 			"siteUrl": "https://shopiette.bdau.fr"
 		},
