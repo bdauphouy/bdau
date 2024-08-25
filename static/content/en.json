@@ -1,5 +1,7 @@
 {
-	"title": "Hello,\nI am Baptiste Dauphouy,\nfull-stack developer.",
+	"landing": {
+		"title": "Hello,\nI am Baptiste Dauphouy,\nfull-stack developer."
+	},
 	"projects": [
 		{
 			"title": "Shopiette",
@@ -23,5 +25,17 @@
 			"githubUrl": "https://github.com/bdauphouy/vitaliplay",
 			"siteUrl": "https://vitaliplay.fr"
 		}
-	]
+	],
+	"contact": {
+		"title": "Contact",
+		"email": "mail@bdau.fr",
+		"socials": {
+			"github": "https://github.com/bdauphouy",
+			"linkedin": "https://linkedin.com/baptiste-dauphouy",
+			"x": "https://x.com/bdauphouy"
+		}
+	},
+	"footer": {
+		"text": "Made with Svelte and love by Baptiste Dauphouy."
+	}
 }

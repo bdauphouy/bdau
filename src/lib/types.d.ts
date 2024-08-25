@@ -1,3 +1,5 @@
+export type Lang = 'en' | 'fr' | 'es';
+
 export type Project = {
 	title: string;
 	handle: string;
@@ -8,8 +10,20 @@ export type Project = {
 };
 
 export type PageContent = {
-	title: string;
+	landing: {
+		title: string;
+	};
 	projects: Project[];
+	contact: {
+		title: string;
+		email: string;
+		socials: {
+			github: string;
+			linkedin: string;
+			x: string;
+		};
+	};
+	footer: {
+		text: string;
+	};
 };
-
-export type Lang = 'en' | 'fr' | 'es';

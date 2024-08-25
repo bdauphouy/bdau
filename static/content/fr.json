@@ -1,11 +1,13 @@
 {
-	"title": "Bonjour,\nJe suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
+	"landing": {
+		"title": "Bonjour,\nJe suis Baptiste Dauphouy,\ndéveloppeur full-stack."
+	},
 	"projects": [
 		{
 			"title": "Shopiette",
 			"handle": "shopiette",
 			"description": "Créez rapidement des sites e-commerce avec Svelte.",
-			"badgeText": "Travail en cours",
+			"badgeText": "En cours",
 			"githubUrl": "https://github.com/bdauphouy/shopiette",
 			"siteUrl": "https://shopiette.bdau.fr"
 		},
@@ -23,5 +25,17 @@
 			"githubUrl": "https://github.com/bdauphouy/vitaliplay",
 			"siteUrl": "https://vitaliplay.fr"
 		}
-	]
+	],
+	"contact": {
+		"title": "Contact",
+		"email": "mail@bdau.fr",
+		"socials": {
+			"github": "https://github.com/bdauphouy",
+			"linkedin": "https://linkedin.com/baptiste-dauphouy",
+			"x": "https://x.com/bdauphouy"
+		}
+	},
+	"footer": {
+		"text": "Fait avec Svelte et amour par Baptiste Dauphouy."
+	}
 }

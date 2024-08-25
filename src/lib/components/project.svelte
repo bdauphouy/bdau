@@ -26,7 +26,7 @@
 	>
 		<h2 class="text-lg font-medium text-secondary">{project.title}</h2>
 		<p class="text-sm text-secondary/60">{project.description}</p>
-		<div class="mt-4 flex gap-3">
+		<div class="mt-4 flex gap-4">
 			<Button as="a" href={project.githubUrl}>See on Github</Button>
 			<Button as="a" href={project.siteUrl}>Go to the site</Button>
 		</div>
