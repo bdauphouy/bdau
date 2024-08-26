@@ -4,8 +4,6 @@
 	import Button from './button.svelte';
 
 	export let project: Project;
-
-	console.log(project.links);
 </script>
 
 <div class="group relative overflow-hidden rounded-lg ring-2 ring-secondary/20">

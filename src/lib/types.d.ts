@@ -45,6 +45,7 @@ export type PageGlobals = {
 	socials: {
 		github: string;
 		linkedin: string;
+		malt: string;
 		x: string;
 	};
 	projects: (Pick<Project, 'title' | 'handle'> & { links?: Pick<Link, 'handle', 'url'>[] })[];
