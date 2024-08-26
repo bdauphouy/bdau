@@ -4,6 +4,7 @@
 	import Project from '$lib/components/project.svelte';
 	import ResumeSpinner from '$lib/components/resume-spinner.svelte';
 	import Timeline from '$lib/components/timeline.svelte';
+	import { fade } from 'svelte/transition';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -88,42 +89,46 @@
 	class="flex flex-col-reverse justify-end gap-12 py-12 md:justify-center md:gap-20 md:py-32 lg:grid lg:grid-cols-2"
 >
 	<div class="flex flex-col gap-12">
-		<h2 class="text-4xl font-medium lg:text-5xl">{currentTimelineItem.title}</h2>
-		<div class="flex flex-col gap-8">
-			<p class="text-lg">
-				{currentTimelineItem.text}
-			</p>
-			<div class="flex flex-col gap-6 md:flex-row md:gap-8">
-				{#if currentTimelineItem.technologies && currentTimelineItem.technologies.length > 0}
-					<div class="flex flex-col gap-4">
-						<h3 class="text-md font-medium text-secondary/60">
-							{data.content.timeline.technologiesTitle}
-						</h3>
-						<ul class="flex items-center gap-4">
-							{#each currentTimelineItem.technologies as technology}
-								<li>
-									<Badge variant="secondary">{technology}</Badge>
-								</li>
-							{/each}
-						</ul>
-					</div>
-				{/if}
-				{#if currentTimelineItem.members && currentTimelineItem.members.length > 0}
-					<div class="flex flex-col gap-4">
-						<h3 class="text-md font-medium text-secondary/60">
-							{data.content.timeline.membersTitle}
-						</h3>
-						<ul class="flex flex-wrap items-center gap-4">
-							{#each currentTimelineItem.members as member}
-								<li class="flex">
-									<Button as="a" href={member.link}>{member.name}</Button>
-								</li>
-							{/each}
-						</ul>
-					</div>
-				{/if}
+		{#key currentTimelineItemIndex}
+			<h2 in:fade class="text-4xl font-medium lg:text-5xl">
+				{currentTimelineItem.title}
+			</h2>
+			<div in:fade={{ delay: 200 }} class="flex flex-col gap-8">
+				<p class="text-lg">
+					{currentTimelineItem.text}
+				</p>
+				<div class="flex flex-col gap-6 md:flex-row md:gap-8">
+					{#if currentTimelineItem.technologies && currentTimelineItem.technologies.length > 0}
+						<div class="flex flex-col gap-4">
+							<h3 class="text-md font-medium text-secondary/60">
+								{data.content.timeline.technologiesTitle}
+							</h3>
+							<ul class="flex items-center gap-4">
+								{#each currentTimelineItem.technologies as technology}
+									<li>
+										<Badge variant="secondary">{technology}</Badge>
+									</li>
+								{/each}
+							</ul>
+						</div>
+					{/if}
+					{#if currentTimelineItem.members && currentTimelineItem.members.length > 0}
+						<div class="flex flex-col gap-4">
+							<h3 class="text-md font-medium text-secondary/60">
+								{data.content.timeline.membersTitle}
+							</h3>
+							<ul class="flex flex-wrap items-center gap-4">
+								{#each currentTimelineItem.members as member}
+									<li class="flex">
+										<Button as="a" href={member.link}>{member.name}</Button>
+									</li>
+								{/each}
+							</ul>
+						</div>
+					{/if}
+				</div>
 			</div>
-		</div>
+		{/key}
 	</div>
 	<div class="w-80 self-center md:w-full">
 		<Timeline items={orderedTimelineItems} on:intersect={handleTimelineItemIntersect} />
