@@ -1,9 +1,15 @@
 {
 	"landing": {
 		"title": "Bonjour,\nje suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
-		"resume": {
-			"title": "Télécharger mon CV"
+		"isAvailable": true,
+		"badges": {
+			"available": "Disponible",
+			"unavailable": "Indisponible",
+			"location": "Valence, Espagne"
 		}
+	},
+	"resume": {
+		"title": "Télécharger mon CV"
 	},
 	"projects": [
 		{
@@ -35,7 +41,7 @@
 		"email": "mail@bdau.fr",
 		"socials": {
 			"github": "https://github.com/bdauphouy",
-			"linkedin": "https://linkedin.com/baptiste-dauphouy",
+			"linkedin": "https://linkedin.com/in/baptiste-dauphouy",
 			"x": "https://x.com/bdauphouy"
 		}
 	},

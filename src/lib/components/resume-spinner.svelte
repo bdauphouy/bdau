@@ -37,7 +37,7 @@
 	$: diameter = getDiameter(text);
 </script>
 
-<div class="group relative h-28 w-28 rounded-full md:h-32 md:w-32">
+<div class="group relative h-24 w-24 rounded-full md:h-32 md:w-32">
 	<svg class="animate-spin [animation-duration:_10s]" viewBox="0 0 140 140">
 		<path
 			id="text-diameter"
@@ -46,7 +46,7 @@
 			class="translate-x-1/2 translate-y-1/2"
 		/>
 		<text
-			class="text-md fill-secondary font-medium tracking-wide transition-[letter-spacing,_fill] group-focus-within:fill-secondary/60 group-hover:fill-secondary/60 group-hover:tracking-[.25em]"
+			class="text-md fill-secondary font-medium tracking-wide transition-[letter-spacing,_fill] group-focus-within:fill-secondary/60 group-hover:fill-secondary/60 group-hover:tracking-widest"
 		>
 			<textPath href="#text-diameter">
 				<tspan>

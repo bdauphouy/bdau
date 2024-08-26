@@ -1,5 +1,11 @@
+<script lang="ts">
+	export let variant: 'primary' | 'secondary' = 'primary';
+</script>
+
 <span
-	class="inline-block rounded-full bg-primary px-3 py-1 text-sm font-medium text-secondary ring-2 ring-primary/20"
+	class="{variant === 'primary'
+		? 'bg-primary text-secondary ring-primary/20'
+		: 'text-secondary ring-secondary/20'} inline-flex items-center rounded-full px-3 py-1 text-sm font-medium ring-2"
 >
 	<slot />
 </span>

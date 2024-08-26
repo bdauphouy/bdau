@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Badge from '$lib/components/badge.svelte';
 	import Button from '$lib/components/button.svelte';
 	import Project from '$lib/components/project.svelte';
 	import ResumeSpinner from '$lib/components/resume-spinner.svelte';
@@ -7,12 +8,30 @@
 	export let data: PageData;
 </script>
 
+<div class="sticky top-6 z-30 -mt-6">
+	<div class="absolute right-0">
+		<ResumeSpinner url="/resumes/{data.lang}.pdf" text={data.content.resume.title} />
+	</div>
+</div>
+
 <section class="flex justify-start py-32 md:justify-center">
-	<h1 class="text-5xl font-medium leading-tight md:whitespace-pre lg:text-6xl lg:leading-tight">
-		{data.content.landing.title}
-	</h1>
-	<div class="absolute right-6 top-0 md:right-12">
-		<ResumeSpinner url="/resumes/{data.lang}.pdf" text={data.content.landing.resume.title} />
+	<div class="flex flex-col gap-8">
+		<div class="flex items-center gap-4">
+			<Badge variant="secondary">
+				<span
+					class="{data.content.landing.isAvailable
+						? 'bg-green-500'
+						: 'bg-red-500'} mr-2 block h-1 w-1 rounded-full"
+				></span>
+				{data.content.landing.badges[
+					data.content.landing.isAvailable ? 'available' : 'unavailable'
+				]}
+			</Badge>
+			<Badge variant="secondary">{data.content.landing.badges.location}</Badge>
+		</div>
+		<h1 class="text-5xl font-medium leading-tight md:whitespace-pre lg:text-6xl lg:leading-tight">
+			{data.content.landing.title}
+		</h1>
 	</div>
 </section>
 
@@ -33,8 +52,8 @@
 		</p>
 		<ul class="flex gap-4">
 			{#each Object.entries(data.content.contact.socials) as [name, url]}
-				<li class="">
-					<Button href={url}>
+				<li class="flex">
+					<Button as="a" href={url}>
 						{name.charAt(0).toUpperCase() + name.slice(1)}
 					</Button>
 				</li>
@@ -47,7 +66,7 @@
 		</h3>
 		<div class="mt-10 flex flex-col items-start gap-2 border-b-4 border-secondary/20 pb-6">
 			<a
-				class="rounded-full text-3xl font-medium transition-colors duration-300 hover:text-secondary/80 lg:text-4xl"
+				class="rounded-full text-3xl font-medium transition-colors duration-300 hover:text-secondary/80 focus:text-secondary/80 lg:text-4xl"
 				href={`mailto:${data.content.contact.email}`}
 			>
 				{data.content.contact.email}
