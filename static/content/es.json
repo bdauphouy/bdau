@@ -13,6 +13,10 @@
 			{
 				"handle": "location",
 				"title": "Valencia, España"
+			},
+			{
+				"handle": "coming-soon",
+				"title": "¡Portafolio próximamente animado!"
 			}
 		]
 	},
@@ -22,7 +26,7 @@
 	"projects": [
 		{
 			"handle": "shopiette",
-			"description": "Cree rápidamente sitios de comercio electrónico con Svelte.",
+			"description": "Crea rápidamente sitios de comercio electrónico con Svelte.",
 			"badges": [
 				{
 					"handle": "in-progress",
@@ -32,7 +36,7 @@
 			"links": [
 				{
 					"handle": "github",
-					"title": "Ver el Github"
+					"title": "Ver en Github"
 				},
 				{
 					"handle": "website",
@@ -42,11 +46,11 @@
 		},
 		{
 			"handle": "vintify",
-			"description": "Importe fácilmente sus productos de Vinted a Shopify.",
+			"description": "Importa fácilmente tus productos Vinted en Shopify.",
 			"links": [
 				{
 					"handle": "github",
-					"title": "Ver el Github"
+					"title": "Ver en Github"
 				},
 				{
 					"handle": "website",
@@ -60,7 +64,7 @@
 			"links": [
 				{
 					"handle": "github",
-					"title": "Ver el Github"
+					"title": "Ver en Github"
 				},
 				{
 					"handle": "website",
@@ -70,14 +74,58 @@
 		}
 	],
 	"timeline": {
-		"technologiesTitle": "Tecnologias utilizadas",
+		"technologiesTitle": "Tecnologías utilizadas",
 		"membersTitle": "Miembros del proyecto",
 		"items": [
 			{
-				"date": "01/01/2018",
-				"title": "janvier 2018",
-				"text": "Découverte de la programmation avec Scratch.",
-				"technologies": ["Scratch"],
+				"date": "09/01/2018",
+				"title": "septiembre 2018",
+				"text": "Descubrimiento de HTML y CSS en segundo año de secundaria."
+			},
+			{
+				"date": "07/02/2019",
+				"title": "2019",
+				"text": "Creación de diversos proyectos, exploro, descubro y aprendo Javascript."
+			},
+			{
+				"date": "03/01/2020",
+				"title": "marzo 2020",
+				"text": "Puesta al día en programación después de una pausa de unos meses. Empieza el confinamiento y necesito hacer algo productivo con mis días en lugar de jugar a Fortnite."
+			},
+			{
+				"date": "06/01/2020",
+				"title": "junio 2020",
+				"text": "Encuentro a mi primer cliente que está dispuesto a pagarme para que desarrolle su sitio: Flexomatic. Al final, nunca me pagó :(",
+				"technologies": ["HTML", "CSS", "Javascript"]
+			},
+			{
+				"date": "05/01/2021",
+				"title": "mayo 2021",
+				"text": "Creación de mi primer portafolio \"serio\" y compra de mi dominio bdph.me (que ya no poseo).",
+				"technologies": ["React.js", "Styled Components"]
+			},
+			{
+				"date": "09/01/2021",
+				"title": "septiembre 2021",
+				"text": "Me mudo de mi campo a París, preparo mi regreso a clases y hago los últimos ajustes en mi portafolio."
+			},
+			{
+				"date": "11/01/2021",
+				"title": "noviembre 2021",
+				"text": "Primera misión freelance para un cliente que finalmente me paga! Synerg'hetic, una asociación en HETIC que ofrece misiones a sus estudiantes, confía en mí. El proyecto: Vitaliplay, una plataforma deportiva en línea para personas mayores. Me encargo de la parte front-end y elijo usar la stack React.",
+				"technologies": ["Next.js", "Taiwind"]
+			},
+			{
+				"date": "01/01/2022",
+				"title": "enero 2022",
+				"text": "Trabajo para un cliente que tiene como proyecto crear una red social centrada en las competencias profesionales de los usuarios, especialmente dirigida a desarrolladores y diseñadores.",
+				"technologies": ["React.js", "Taiwind"]
+			},
+			{
+				"date": "04/01/2022",
+				"title": "abril 2022",
+				"text": "Creación de un RPG en navegador en grupo como parte de un proyecto escolar. El resultado impresiona a toda la promoción.",
+				"technologies": ["HTML", "CSS", "Javascript"],
 				"members": [
 					{
 						"name": "Arthur",
@@ -85,27 +133,37 @@
 					},
 					{
 						"name": "Thierry",
-						"link": "https://tmgn.me"
+						"link": "https://github.com/thierrymgn"
+					},
+					{
+						"name": "Anthony",
+						"link": "https://github.com/anthony-rgs"
+					},
+					{
+						"name": "Fabien",
+						"link": "https://github.com/Cammyxalot"
+					},
+					{
+						"name": "Victor",
+						"link": "https://github.com"
 					}
 				]
 			},
 			{
-				"date": "01/06/2018",
-				"title": "juin 2018",
-				"text": "Présentation de mon jeu qui me fait obtenir la note de 16/20 à l'oral du brevet.",
-				"technologies": ["Scratch"]
+				"date": "08/01/2022",
+				"title": "agosto 2022",
+				"text": "Inicio de mis prácticas en Radio France."
 			},
 			{
-				"date": "01/09/2018",
-				"title": "septembre 2018",
-				"text": "Découverte de l'HTML et du CSS au lycée.",
-				"technologies": ["HTML", "CSS"]
+				"date": "09/01/2024",
+				"title": "Hoy",
+				"text": "Contenido próximamente."
 			}
 		]
 	},
 	"contact": {
 		"title": "Contacto",
-		"subtitle": "Para cualquier solicitud, puede contactarme por correo electrónico o a través de mis redes sociales."
+		"subtitle": "¿Te gustó mi presentación y quieres trabajar conmigo? Contáctame por correo electrónico o a través de mis redes sociales."
 	},
 	"footer": {
 		"text": "Hecho con Svelte y amor por Baptiste Dauphouy."

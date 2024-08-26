@@ -33,7 +33,7 @@
 <section class="flex justify-start pb-12 pt-20 md:justify-center md:py-32">
 	<div class="flex flex-col gap-8">
 		{#if data.content.landing.badges && data.content.landing.badges.length > 0}
-			<ul class="flex items-center gap-4">
+			<ul class="flex flex-wrap items-center gap-4">
 				{#each data.content.landing.badges as badge}
 					{#if badge.handle === 'available'}
 						{#if data.content.globals.isAvailable}
@@ -113,7 +113,7 @@
 						<h3 class="text-md font-medium text-secondary/60">
 							{data.content.timeline.membersTitle}
 						</h3>
-						<ul class="flex items-center gap-4">
+						<ul class="flex flex-wrap items-center gap-4">
 							{#each currentTimelineItem.members as member}
 								<li class="flex">
 									<Button as="a" href={member.link}>{member.name}</Button>

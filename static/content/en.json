@@ -13,16 +13,20 @@
 			{
 				"handle": "location",
 				"title": "Valencia, Spain"
+			},
+			{
+				"handle": "coming-soon",
+				"title": "Portfolio coming soon!"
 			}
 		]
 	},
 	"resume": {
-		"title": "Download my resume"
+		"title": "Download my Resume"
 	},
 	"projects": [
 		{
 			"handle": "shopiette",
-			"description": "Quickly create e-commerce sites with Svelte.",
+			"description": "Quickly create e-commerce websites with Svelte.",
 			"badges": [
 				{
 					"handle": "in-progress",
@@ -32,25 +36,25 @@
 			"links": [
 				{
 					"handle": "github",
-					"title": "View on GitHub"
+					"title": "View on Github"
 				},
 				{
 					"handle": "website",
-					"title": "View the website"
+					"title": "View the site"
 				}
 			]
 		},
 		{
 			"handle": "vintify",
-			"description": "Easily import your Vinted products into Shopify.",
+			"description": "Easily import your Vinted products to Shopify.",
 			"links": [
 				{
 					"handle": "github",
-					"title": "View on GitHub"
+					"title": "View on Github"
 				},
 				{
 					"handle": "website",
-					"title": "View the website"
+					"title": "View the site"
 				}
 			]
 		},
@@ -60,24 +64,68 @@
 			"links": [
 				{
 					"handle": "github",
-					"title": "View on GitHub"
+					"title": "View on Github"
 				},
 				{
 					"handle": "website",
-					"title": "View the website"
+					"title": "View the site"
 				}
 			]
 		}
 	],
 	"timeline": {
 		"technologiesTitle": "Technologies used",
-		"membersTitle": "Members of the projet",
+		"membersTitle": "Project members",
 		"items": [
 			{
-				"date": "01/01/2018",
-				"title": "janvier 2018",
-				"text": "Découverte de la programmation avec Scratch.",
-				"technologies": ["Scratch"],
+				"date": "09/01/2018",
+				"title": "September 2018",
+				"text": "Discovery of HTML and CSS in sophomore year of high school."
+			},
+			{
+				"date": "07/02/2019",
+				"title": "2019",
+				"text": "Creation of various projects, I explore, discover, and learn Javascript."
+			},
+			{
+				"date": "03/01/2020",
+				"title": "March 2020",
+				"text": "Getting back into coding after a few months' break. Lockdown begins, and I need to do something productive with my days instead of playing Fortnite."
+			},
+			{
+				"date": "06/01/2020",
+				"title": "June 2020",
+				"text": "I find my first client who is willing to pay me to develop his site: Flexomatic. In the end, he never paid me :(",
+				"technologies": ["HTML", "CSS", "Javascript"]
+			},
+			{
+				"date": "05/01/2021",
+				"title": "May 2021",
+				"text": "Creation of my first \"serious\" portfolio and purchase of my domain bdph.me (which I no longer own).",
+				"technologies": ["React.js", "Styled Components"]
+			},
+			{
+				"date": "09/01/2021",
+				"title": "September 2021",
+				"text": "I move from my countryside to Paris, prepare for my school start, and make the final adjustments to my portfolio."
+			},
+			{
+				"date": "11/01/2021",
+				"title": "November 2021",
+				"text": "First freelance mission for a client who finally pays me! Synerg'hetic, an association at HETIC offering missions to its students, trusts me. The project: Vitaliplay, an online sports platform for seniors. I take care of the front-end and choose to use the React stack.",
+				"technologies": ["Next.js", "Taiwind"]
+			},
+			{
+				"date": "01/01/2022",
+				"title": "January 2022",
+				"text": "Working for a client with a project to create a social network focused on users' professional skills, especially for developers and designers.",
+				"technologies": ["React.js", "Taiwind"]
+			},
+			{
+				"date": "04/01/2022",
+				"title": "April 2022",
+				"text": "Creation of a browser RPG as a group project for a school project. The result impresses the entire class.",
+				"technologies": ["HTML", "CSS", "Javascript"],
 				"members": [
 					{
 						"name": "Arthur",
@@ -85,27 +133,37 @@
 					},
 					{
 						"name": "Thierry",
-						"link": "https://tmgn.me"
+						"link": "https://github.com/thierrymgn"
+					},
+					{
+						"name": "Anthony",
+						"link": "https://github.com/anthony-rgs"
+					},
+					{
+						"name": "Fabien",
+						"link": "https://github.com/Cammyxalot"
+					},
+					{
+						"name": "Victor",
+						"link": "https://github.com"
 					}
 				]
 			},
 			{
-				"date": "01/06/2018",
-				"title": "juin 2018",
-				"text": "Présentation de mon jeu qui me fait obtenir la note de 16/20 à l'oral du brevet.",
-				"technologies": ["Scratch"]
+				"date": "08/01/2022",
+				"title": "August 2022",
+				"text": "Start of my internship at Radio France."
 			},
 			{
-				"date": "01/09/2018",
-				"title": "septembre 2018",
-				"text": "Découverte de l'HTML et du CSS au lycée.",
-				"technologies": ["HTML", "CSS"]
+				"date": "09/01/2024",
+				"title": "Today",
+				"text": "Content coming soon."
 			}
 		]
 	},
 	"contact": {
 		"title": "Contact",
-		"subtitle": "For any inquiries about me, you can contact me via email or through my social networks."
+		"subtitle": "Did you like my presentation and want to work with me? Contact me by email or via my social networks."
 	},
 	"footer": {
 		"text": "Made with Svelte and love by Baptiste Dauphouy."

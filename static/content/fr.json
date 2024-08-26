@@ -13,6 +13,10 @@
 			{
 				"handle": "location",
 				"title": "Valencia, Espagne"
+			},
+			{
+				"handle": "coming-soon",
+				"title": "Portfolio prochainement animé !"
 			}
 		]
 	},
@@ -74,10 +78,54 @@
 		"membersTitle": "Membres du projet",
 		"items": [
 			{
-				"date": "01/01/2018",
-				"title": "janvier 2018",
-				"text": "Découverte de la programmation avec Scratch.",
-				"technologies": ["Scratch"],
+				"date": "09/01/2018",
+				"title": "septembre 2018",
+				"text": "Découverte de l'HTML et du CSS en classe de seconde au lycée."
+			},
+			{
+				"date": "07/02/2019",
+				"title": "2019",
+				"text": "Création de projets divers, j'explore, je découvre et j'apprends Javascript."
+			},
+			{
+				"date": "03/01/2020",
+				"title": "mars 2020",
+				"text": "Remise à niveau dans le code après une pause de quelques mois. Le confinement commence, et je me dois de faire quelque chose de productif dans mes journées, au lieu de jouer à Fortnite."
+			},
+			{
+				"date": "06/01/2020",
+				"title": "juin 2020",
+				"text": "Je trouve mon premier client qui est prêt à me payer pour que je lui développe son site : Flexomatic. Finalement, il ne m'a jamais payé :(",
+				"technologies": ["HTML", "CSS", "Javascript"]
+			},
+			{
+				"date": "05/01/2021",
+				"title": "mai 2021",
+				"text": "Création de mon premier portfolio \"sérieux\" et achat de mon domaine bdph.me (que je ne possède plus).",
+				"technologies": ["React.js", "Styled Components"]
+			},
+			{
+				"date": "09/01/2021",
+				"title": "septembre 2021",
+				"text": "Je quitte ma campagne pour Paris, je prépare ma rentrée et fais les derniers ajustements sur mon portfolio."
+			},
+			{
+				"date": "11/01/2021",
+				"title": "novembre 2021",
+				"text": "Première mission freelance pour un client qui me paye enfin ! Synerg'hetic, une association au d'HETIC, proposant des missions à ses étudiants, me fait confiance. Le projet : Vitaliplay, une plateforme de sport en ligne pour les seniors. Je m'occupe de la partie front-end et choisis d'utiliser la stack React.",
+				"technologies": ["Next.js", "Taiwind"]
+			},
+			{
+				"date": "01/01/2022",
+				"title": "janvier 2022",
+				"text": "Travail pour un client qui a comme projet de faire un réseaux social axé sur les compétences professionnelles des utilisateurs, adressé notamment aux développeurs et aux designers.",
+				"technologies": ["React.js", "Taiwind"]
+			},
+			{
+				"date": "04/01/2022",
+				"title": "avril 2022",
+				"text": "Création d'un RPG sur navigateur en groupe dans le cadre d'une projet d'école. Le résultat bluffe toute la promo.",
+				"technologies": ["HTML", "CSS", "Javascript"],
 				"members": [
 					{
 						"name": "Arthur",
@@ -85,27 +133,37 @@
 					},
 					{
 						"name": "Thierry",
-						"link": "https://tmgn.me"
+						"link": "https://github.com/thierrymgn"
+					},
+					{
+						"name": "Anthony",
+						"link": "https://github.com/anthony-rgs"
+					},
+					{
+						"name": "Fabien",
+						"link": "https://github.com/Cammyxalot"
+					},
+					{
+						"name": "Victor",
+						"link": "https://github.com"
 					}
 				]
 			},
 			{
-				"date": "01/06/2018",
-				"title": "juin 2018",
-				"text": "Présentation de mon jeu qui me fait obtenir la note de 16/20 à l'oral du brevet.",
-				"technologies": ["Scratch"]
+				"date": "08/01/2022",
+				"title": "août 2022",
+				"text": "Début de mon alternance chez Radio France."
 			},
 			{
-				"date": "01/09/2018",
-				"title": "septembre 2018",
-				"text": "Découverte de l'HTML et du CSS au lycée.",
-				"technologies": ["HTML", "CSS"]
+				"date": "09/01/2024",
+				"title": "Aujourd'hui",
+				"text": "Contenu à venir."
 			}
 		]
 	},
 	"contact": {
 		"title": "Contact",
-		"subtitle": "Pour toute demande me concernant, vous pouvez me contacter par e-mail ou via mes réseaux sociaux."
+		"subtitle": "Ma présentation vous a plu et vous souhaitez travailler avec moi ? Contactez-moi par e-mail ou via mes réseaux sociaux."
 	},
 	"footer": {
 		"text": "Fait avec Svelte et amour par Baptiste Dauphouy."
