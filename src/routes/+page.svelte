@@ -11,13 +11,13 @@
 		data.content.globals.projects.find((project) => project.handle === handle)!;
 </script>
 
-<div class="sticky top-6 z-30 -mt-6">
+<div class="sticky top-6 z-30 -mt-12">
 	<div class="absolute right-0">
 		<ResumeSpinner url="/resumes/{data.lang}.pdf" text={data.content.resume.title} />
 	</div>
 </div>
 
-<section class="flex justify-start py-32 md:justify-center">
+<section class="flex justify-start pb-12 pt-20 md:justify-center md:py-32">
 	<div class="flex flex-col gap-8">
 		{#if data.content.landing.badges && data.content.landing.badges.length > 0}
 			<ul class="flex items-center gap-4">
@@ -48,7 +48,7 @@
 	</div>
 </section>
 
-<section class="py-32">
+<section class="py-12 md:py-32">
 	<ul class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
 		{#each data.content.projects as project}
 			{@const projectGlobals = getProjectGlobals(project.handle)}
@@ -70,7 +70,7 @@
 	</ul>
 </section>
 
-<section class="flex flex-col-reverse gap-20 py-32 lg:grid lg:grid-cols-3">
+<section class="flex flex-col-reverse gap-12 py-12 md:gap-20 md:py-32 lg:grid lg:grid-cols-3">
 	<div class="col-span-2">
 		<h3 class="text-4xl font-medium lg:text-5xl">
 			{data.content.contact.title}

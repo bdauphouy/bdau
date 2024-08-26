@@ -14,7 +14,10 @@
 	};
 </script>
 
-<select on:change={handleChange} class="rounded-full bg-transparent text-lg font-medium">
+<select
+	on:change={handleChange}
+	class="cursor-pointer rounded-full bg-transparent text-lg font-medium"
+>
 	{#each options as option}
 		<option value={option} selected={defaultOption === option}>{option}</option>
 	{/each}
