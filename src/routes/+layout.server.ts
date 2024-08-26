@@ -1,7 +1,8 @@
-import type { Lang, PageContent } from '$lib/types';
+import type { Lang, PageContent, PageGlobals } from '$lib/types';
 import en from '$static/content/en.json';
 import es from '$static/content/es.json';
 import fr from '$static/content/fr.json';
+import globals from '$static/content/globals.json';
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async ({ request, url }) => {
@@ -31,5 +32,12 @@ export const load: LayoutServerLoad = async ({ request, url }) => {
 		}
 	}
 
-	return { content: files[lang], languages, lang };
+	return {
+		content: {
+			...files[lang],
+			globals: globals as PageGlobals
+		},
+		languages,
+		lang
+	};
 };

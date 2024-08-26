@@ -1,49 +1,77 @@
 {
 	"landing": {
 		"title": "Hello,\nI am Baptiste Dauphouy,\nfull-stack developer.",
-		"isAvailable": true,
-		"badges": {
-			"available": "Available",
-			"unavailable": "Unavailable",
-			"location": "Valencia, Spain"
-		}
+		"badges": [
+			{
+				"handle": "available",
+				"title": "Available"
+			},
+			{
+				"handle": "unavailable",
+				"title": "Unavailable"
+			},
+			{
+				"handle": "location",
+				"title": "Valencia, Spain"
+			}
+		]
 	},
 	"resume": {
 		"title": "Download my resume"
 	},
 	"projects": [
 		{
-			"title": "Shopiette",
 			"handle": "shopiette",
-			"description": "Créez rapidement des sites e-commerce avec Svelte.",
-			"badgeText": "In progress",
-			"githubUrl": "https://github.com/bdauphouy/shopiette",
-			"siteUrl": "https://shopiette.bdau.fr"
+			"description": "Quickly create e-commerce sites with Svelte.",
+			"badges": [
+				{
+					"handle": "in-progress",
+					"title": "In progress"
+				}
+			],
+			"links": [
+				{
+					"handle": "github",
+					"title": "View on GitHub"
+				},
+				{
+					"handle": "website",
+					"title": "View the website"
+				}
+			]
 		},
 		{
-			"title": "Vintify",
 			"handle": "vintify",
-			"description": "Importez facilement vos produits Vinted sur Shopify.",
-			"githubUrl": "https://github.com/bdauphouy/vintify",
-			"siteUrl": "https://vintify.bdau.fr"
+			"description": "Easily import your Vinted products into Shopify.",
+			"links": [
+				{
+					"handle": "github",
+					"title": "View on GitHub"
+				},
+				{
+					"handle": "website",
+					"title": "View the website"
+				}
+			]
 		},
 		{
-			"title": "Vitaliplay",
 			"handle": "vitaliplay",
-			"description": "Vitaliplay est une plateforme sportive pour les seniors.",
-			"githubUrl": "https://github.com/bdauphouy/vitaliplay",
-			"siteUrl": "https://vitaliplay.fr"
+			"description": "Vitaliplay is a sports platform for seniors.",
+			"links": [
+				{
+					"handle": "github",
+					"title": "View on GitHub"
+				},
+				{
+					"handle": "website",
+					"title": "View the website"
+				}
+			]
 		}
 	],
 	"contact": {
 		"title": "Contact",
-		"subtitle": "For any inquiries about me, you can contact me via my email or my social networks.",
-		"email": "mail@bdau.fr",
-		"socials": {
-			"github": "https://github.com/bdauphouy",
-			"linkedin": "https://linkedin.com/in/baptiste-dauphouy",
-			"x": "https://x.com/bdauphouy"
-		}
+		"subtitle": "For any inquiries about me, you can contact me via email or through my social networks."
 	},
 	"footer": {
 		"text": "Made with Svelte and love by Baptiste Dauphouy."

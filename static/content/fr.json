@@ -1,49 +1,77 @@
 {
 	"landing": {
 		"title": "Bonjour,\nje suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
-		"isAvailable": true,
-		"badges": {
-			"available": "Disponible",
-			"unavailable": "Indisponible",
-			"location": "Valence, Espagne"
-		}
+		"badges": [
+			{
+				"handle": "available",
+				"title": "Disponible"
+			},
+			{
+				"handle": "unavailable",
+				"title": "Non disponible"
+			},
+			{
+				"handle": "location",
+				"title": "Valencia, Espagne"
+			}
+		]
 	},
 	"resume": {
 		"title": "Télécharger mon CV"
 	},
 	"projects": [
 		{
-			"title": "Shopiette",
 			"handle": "shopiette",
 			"description": "Créez rapidement des sites e-commerce avec Svelte.",
-			"badgeText": "En cours",
-			"githubUrl": "https://github.com/bdauphouy/shopiette",
-			"siteUrl": "https://shopiette.bdau.fr"
+			"badges": [
+				{
+					"handle": "in-progress",
+					"title": "En cours"
+				}
+			],
+			"links": [
+				{
+					"handle": "github",
+					"title": "Voir le Github"
+				},
+				{
+					"handle": "website",
+					"title": "Voir le site"
+				}
+			]
 		},
 		{
-			"title": "Vintify",
 			"handle": "vintify",
 			"description": "Importez facilement vos produits Vinted sur Shopify.",
-			"githubUrl": "https://github.com/bdauphouy/vintify",
-			"siteUrl": "https://vintify.bdau.fr"
+			"links": [
+				{
+					"handle": "github",
+					"title": "Voir le Github"
+				},
+				{
+					"handle": "website",
+					"title": "Voir le site"
+				}
+			]
 		},
 		{
-			"title": "Vitaliplay",
 			"handle": "vitaliplay",
 			"description": "Vitaliplay est une plateforme sportive pour les seniors.",
-			"githubUrl": "https://github.com/bdauphouy/vitaliplay",
-			"siteUrl": "https://vitaliplay.fr"
+			"links": [
+				{
+					"handle": "github",
+					"title": "Voir le Github"
+				},
+				{
+					"handle": "website",
+					"title": "Voir le site"
+				}
+			]
 		}
 	],
 	"contact": {
 		"title": "Contact",
-		"subtitle": "Pour toute demande me concernant, vous pouvez me contacter par e-mail ou via mes réseaux sociaux.",
-		"email": "mail@bdau.fr",
-		"socials": {
-			"github": "https://github.com/bdauphouy",
-			"linkedin": "https://linkedin.com/in/baptiste-dauphouy",
-			"x": "https://x.com/bdauphouy"
-		}
+		"subtitle": "Pour toute demande me concernant, vous pouvez me contacter par e-mail ou via mes réseaux sociaux."
 	},
 	"footer": {
 		"text": "Fait avec Svelte et amour par Baptiste Dauphouy."

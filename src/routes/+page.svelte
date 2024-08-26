@@ -6,6 +6,9 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
+
+	const getProjectGlobals = (handle: string) =>
+		data.content.globals.projects.find((project) => project.handle === handle)!;
 </script>
 
 <div class="sticky top-6 z-30 -mt-6">
@@ -16,19 +19,29 @@
 
 <section class="flex justify-start py-32 md:justify-center">
 	<div class="flex flex-col gap-8">
-		<div class="flex items-center gap-4">
-			<Badge variant="secondary">
-				<span
-					class="{data.content.landing.isAvailable
-						? 'bg-green-500'
-						: 'bg-red-500'} mr-2 block h-1 w-1 rounded-full"
-				></span>
-				{data.content.landing.badges[
-					data.content.landing.isAvailable ? 'available' : 'unavailable'
-				]}
-			</Badge>
-			<Badge variant="secondary">{data.content.landing.badges.location}</Badge>
-		</div>
+		{#if data.content.landing.badges && data.content.landing.badges.length > 0}
+			<ul class="flex items-center gap-4">
+				{#each data.content.landing.badges as badge}
+					{#if badge.handle === 'available'}
+						{#if data.content.globals.isAvailable}
+							<Badge variant="secondary">
+								<span class="mr-2 h-1 w-1 rounded-full bg-green-500"></span>
+								{badge.title}
+							</Badge>
+						{/if}
+					{:else if badge.handle === 'unavailable'}
+						{#if !data.content.globals.isAvailable}
+							<Badge variant="secondary">
+								<span class="mr-2 h-1 w-1 rounded-full bg-red-500"></span>
+								{badge.title}
+							</Badge>
+						{/if}
+					{:else}
+						<Badge variant="secondary">{badge.title}</Badge>
+					{/if}
+				{/each}
+			</ul>
+		{/if}
 		<h1 class="text-5xl font-medium leading-tight md:whitespace-pre lg:text-6xl lg:leading-tight">
 			{data.content.landing.title}
 		</h1>
@@ -38,28 +51,26 @@
 <section class="py-32">
 	<ul class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
 		{#each data.content.projects as project}
+			{@const projectGlobals = getProjectGlobals(project.handle)}
 			<li>
-				<Project {project} />
+				<Project
+					project={{
+						...project,
+						...projectGlobals,
+						links:
+							projectGlobals.links &&
+							projectGlobals.links.map((link) => ({
+								...(project.links && project.links.find(({ handle }) => handle === link.handle)),
+								...link
+							}))
+					}}
+				/>
 			</li>
 		{/each}
 	</ul>
 </section>
 
-<section class="flex flex-col gap-20 py-32 lg:grid lg:grid-cols-3">
-	<div class="flex max-w-sm flex-col justify-between gap-8">
-		<p class="text-lg">
-			{data.content.contact.subtitle}
-		</p>
-		<ul class="flex gap-4">
-			{#each Object.entries(data.content.contact.socials) as [name, url]}
-				<li class="flex">
-					<Button as="a" href={url}>
-						{name.charAt(0).toUpperCase() + name.slice(1)}
-					</Button>
-				</li>
-			{/each}
-		</ul>
-	</div>
+<section class="flex flex-col-reverse gap-20 py-32 lg:grid lg:grid-cols-3">
 	<div class="col-span-2">
 		<h3 class="text-4xl font-medium lg:text-5xl">
 			{data.content.contact.title}
@@ -67,11 +78,25 @@
 		<div class="mt-10 flex flex-col items-start gap-2 border-b-4 border-secondary/20 pb-6">
 			<a
 				class="rounded-full text-3xl font-medium transition-colors duration-300 hover:text-secondary/80 focus:text-secondary/80 lg:text-4xl"
-				href={`mailto:${data.content.contact.email}`}
+				href={`mailto:${data.content.globals.email}`}
 			>
-				{data.content.contact.email}
+				{data.content.globals.email}
 			</a>
 		</div>
+	</div>
+	<div class="col-start-1 row-start-1 flex max-w-sm flex-col justify-between gap-8">
+		<p class="text-lg">
+			{data.content.contact.subtitle}
+		</p>
+		<ul class="flex gap-4">
+			{#each Object.entries(data.content.globals.socials) as [name, url]}
+				<li class="flex">
+					<Button as="a" href={url}>
+						{name.charAt(0).toUpperCase() + name.slice(1)}
+					</Button>
+				</li>
+			{/each}
+		</ul>
 	</div>
 </section>
 

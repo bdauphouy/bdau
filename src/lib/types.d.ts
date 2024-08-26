@@ -1,39 +1,51 @@
 export type Lang = 'en' | 'fr' | 'es';
 
-export type Project = {
-	title: string;
+export type Badge = {
 	handle: string;
+	title: string;
+};
+
+export type Link = {
+	handle: string;
+	title: string;
+	url: string;
+};
+
+export type Project = {
+	handle: string;
+	title: string;
 	description: string;
-	badgeText?: string;
-	githubUrl: string;
-	siteUrl: string;
+	badges?: Badge[];
+	links?: Link[];
 };
 
 export type PageContent = {
 	landing: {
 		title: string;
-		isAvailable: boolean;
-		badges: {
-			available: string;
-			unavailable: string;
-			location: string;
-		};
+		badges?: Badge[];
 	};
 	resume: {
 		title: string;
 	};
-	projects: Project[];
+	projects: (Pick<Project, 'handle' | 'description' | 'badges'> & {
+		links?: Pick<Link, 'handle' | 'title'>[];
+	})[];
 	contact: {
 		title: string;
 		subtitle: string;
-		email: string;
-		socials: {
-			github: string;
-			linkedin: string;
-			x: string;
-		};
 	};
 	footer: {
 		text: string;
 	};
+};
+
+export type PageGlobals = {
+	isAvailable: boolean;
+	email: string;
+	socials: {
+		github: string;
+		linkedin: string;
+		x: string;
+	};
+	projects: (Pick<Project, 'title' | 'handle'> & { links?: Pick<Link, 'handle', 'url'>[] })[];
 };
