@@ -11,6 +11,19 @@ export type Link = {
 	url: string;
 };
 
+export type TimelineItemMember = {
+	name: string;
+	link: string;
+};
+
+export type TimelineItem = {
+	date: string;
+	title: string;
+	text: string;
+	technologies?: string[];
+	members?: TimelineItemMember[];
+};
+
 export type Project = {
 	handle: string;
 	title: string;
@@ -30,6 +43,11 @@ export type PageContent = {
 	projects: (Pick<Project, 'handle' | 'description' | 'badges'> & {
 		links?: Pick<Link, 'handle' | 'title'>[];
 	})[];
+	timeline: {
+		technologiesTitle: string;
+		membersTitle: string;
+		items: TimelineItem[];
+	};
 	contact: {
 		title: string;
 		subtitle: string;

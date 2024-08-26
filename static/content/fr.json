@@ -69,6 +69,40 @@
 			]
 		}
 	],
+	"timeline": {
+		"technologiesTitle": "Technologies utilisées",
+		"membersTitle": "Membres du projet",
+		"items": [
+			{
+				"date": "01/01/2018",
+				"title": "janvier 2018",
+				"text": "Découverte de la programmation avec Scratch.",
+				"technologies": ["Scratch"],
+				"members": [
+					{
+						"name": "Arthur",
+						"link": "https://arthurfontaine.fr"
+					},
+					{
+						"name": "Thierry",
+						"link": "https://tmgn.me"
+					}
+				]
+			},
+			{
+				"date": "01/06/2018",
+				"title": "juin 2018",
+				"text": "Présentation de mon jeu qui me fait obtenir la note de 16/20 à l'oral du brevet.",
+				"technologies": ["Scratch"]
+			},
+			{
+				"date": "01/09/2018",
+				"title": "septembre 2018",
+				"text": "Découverte de l'HTML et du CSS au lycée.",
+				"technologies": ["HTML", "CSS"]
+			}
+		]
+	},
 	"contact": {
 		"title": "Contact",
 		"subtitle": "Pour toute demande me concernant, vous pouvez me contacter par e-mail ou via mes réseaux sociaux."
