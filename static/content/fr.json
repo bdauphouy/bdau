@@ -1,9 +1,8 @@
 {
 	"landing": {
-		"title": "Bonjour,\nJe suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
+		"title": "Bonjour,\nje suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
 		"resume": {
-			"title": "Télécharger mon CV",
-			"url": "/cv"
+			"title": "Télécharger mon CV"
 		}
 	},
 	"projects": [
@@ -32,6 +31,7 @@
 	],
 	"contact": {
 		"title": "Contact",
+		"subtitle": "Pour toute demande me concernant, vous pouvez me contacter par e-mail ou via mes réseaux sociaux.",
 		"email": "mail@bdau.fr",
 		"socials": {
 			"github": "https://github.com/bdauphouy",

@@ -21,6 +21,6 @@
 
 <Header languages={data.languages} lang={data.lang} />
 
-<main class="relative mx-auto max-w-7xl px-6 py-10 md:px-12">
+<main class="relative mx-auto max-w-7xl p-6 md:px-12 md:py-10">
 	<slot />
 </main>

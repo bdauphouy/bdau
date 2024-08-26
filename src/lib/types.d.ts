@@ -14,12 +14,12 @@ export type PageContent = {
 		title: string;
 		resume: {
 			title: string;
-			url: string;
 		};
 	};
 	projects: Project[];
 	contact: {
 		title: string;
+		subtitle: string;
 		email: string;
 		socials: {
 			github: string;

@@ -2,8 +2,7 @@
 	"landing": {
 		"title": "Hello,\nI am Baptiste Dauphouy,\nfull-stack developer.",
 		"resume": {
-			"title": "Download my resume",
-			"url": "/cv"
+			"title": "Download my resume"
 		}
 	},
 	"projects": [
@@ -11,7 +10,7 @@
 			"title": "Shopiette",
 			"handle": "shopiette",
 			"description": "Créez rapidement des sites e-commerce avec Svelte.",
-			"badgeText": "Work in progress",
+			"badgeText": "In progress",
 			"githubUrl": "https://github.com/bdauphouy/shopiette",
 			"siteUrl": "https://shopiette.bdau.fr"
 		},
@@ -32,6 +31,7 @@
 	],
 	"contact": {
 		"title": "Contact",
+		"subtitle": "For any inquiries about me, you can contact me via my email or my social networks.",
 		"email": "mail@bdau.fr",
 		"socials": {
 			"github": "https://github.com/bdauphouy",
