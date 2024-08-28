@@ -51,7 +51,9 @@
 			<textPath href="#text-diameter">
 				<tspan>
 					{text}
-					<tspan class="transition-opacity duration-300 group-hover:opacity-0">
+					<tspan
+						class="transition-opacity duration-300 group-focus-within:opacity-0 group-hover:opacity-0"
+					>
 						&nbsp; - &nbsp;{text}
 					</tspan>
 				</tspan>
