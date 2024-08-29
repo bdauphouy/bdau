@@ -52,7 +52,7 @@
 				<tspan>
 					{text}
 					<tspan
-						class="transition-opacity duration-300 group-focus-within:opacity-0 group-hover:opacity-0"
+						class="group-hoverre:opacity-0 transition-opacity duration-300 group-focus-within:opacity-0"
 					>
 						&nbsp; - &nbsp;{text}
 					</tspan>

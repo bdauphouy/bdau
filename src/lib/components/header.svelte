@@ -8,7 +8,7 @@
 	const handleLangChange = (event: CustomEvent<string>) => {
 		localStorage.setItem('lang', event.detail);
 
-		goto(`/?lang=${event.detail}`);
+		goto(`/${event.detail}`);
 	};
 </script>
 
