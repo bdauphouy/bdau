@@ -13,5 +13,9 @@ export default {
 			}
 		}
 	},
-	plugins: []
+	plugins: [
+		function ({ addVariant }) {
+			addVariant('firefox', ':-moz-any(&)');
+		}
+	]
 };

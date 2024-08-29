@@ -43,7 +43,7 @@
 			id="text-diameter"
 			d="M {diameter},0 A {diameter},{diameter} 0 0 1 -{diameter},0 A {diameter},{diameter} 0 0 1 {diameter},0"
 			fill="none"
-			class="translate-x-1/2 translate-y-1/2"
+			transform="translate(70, 70)"
 		/>
 		<text
 			class="text-md fill-secondary font-medium tracking-wide transition-[letter-spacing,_fill] group-focus-within:fill-secondary/60 group-hover:fill-secondary/60 group-hover:tracking-widest"
@@ -52,7 +52,7 @@
 				<tspan>
 					{text}
 					<tspan
-						class="group-hoverre:opacity-0 transition-opacity duration-300 group-focus-within:opacity-0"
+						class="firefox:group-hover:invisible transition-opacity duration-300 group-focus-within:opacity-0 group-hover:opacity-0"
 					>
 						&nbsp; - &nbsp;{text}
 					</tspan>
