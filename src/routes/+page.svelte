@@ -25,12 +25,6 @@
 	};
 </script>
 
-<div class="sticky top-6 z-30 -mt-12">
-	<div class="absolute right-0">
-		<ResumeSpinner url="/resumes/{data.lang}.pdf" text={data.content.resume.title} />
-	</div>
-</div>
-
 <section class="flex justify-start pb-12 pt-20 md:justify-center md:py-32">
 	<div class="flex flex-col gap-8">
 		{#if data.content.landing.badges && data.content.landing.badges.length > 0}
@@ -60,6 +54,9 @@
 			{data.content.landing.title}
 		</h1>
 	</div>
+	<div class="absolute right-6 top-0 md:right-12">
+		<ResumeSpinner url="/resumes/{data.lang}.pdf" text={data.content.resume.title} />
+	</div>
 </section>
 
 <section class="py-12 md:py-32">
@@ -86,9 +83,9 @@
 
 <section
 	id="timeline-section"
-	class="flex flex-col-reverse justify-end gap-12 py-12 md:justify-center md:gap-20 md:py-32 lg:grid lg:grid-cols-2"
+	class="flex h-screen flex-col-reverse justify-end gap-12 py-12 md:gap-20 lg:grid lg:h-auto lg:grid-cols-2 lg:py-32"
 >
-	<div class="flex flex-col gap-12">
+	<div class="flex max-w-sm flex-col gap-12 lg:max-w-full">
 		{#key currentTimelineItemIndex}
 			<h2 in:fade class="text-4xl font-medium lg:text-5xl">
 				{currentTimelineItem.title}
@@ -130,8 +127,9 @@
 			</div>
 		{/key}
 	</div>
-	<div class="w-80 self-center md:w-full">
+	<div class="flex w-80 flex-col items-center self-center md:w-1/2 lg:w-full">
 		<Timeline items={orderedTimelineItems} on:intersect={handleTimelineItemIntersect} />
+		<Badge variant="secondary">Scroll to explore</Badge>
 	</div>
 </section>
 
