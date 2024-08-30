@@ -6,49 +6,5 @@
 		"linkedin": "https://linkedin.com/in/baptiste-dauphouy",
 		"malt": "https://www.malt.com/profile/baptistedauphouy",
 		"x": "https://x.com/bdauphouy"
-	},
-	"projects": [
-		{
-			"handle": "shopiette",
-			"title": "Shopiette",
-			"links": [
-				{
-					"handle": "github",
-					"url": "https://github.com/bdauphouy/shopiette"
-				},
-				{
-					"handle": "website",
-					"url": "https://shopiette.bdau.fr"
-				}
-			]
-		},
-		{
-			"handle": "vintify",
-			"title": "Vintify",
-			"links": [
-				{
-					"handle": "github",
-					"url": "https://github.com/bdauphouy/vintify"
-				},
-				{
-					"handle": "website",
-					"url": "https://vintify.bdau.fr"
-				}
-			]
-		},
-		{
-			"title": "Vitaliplay",
-			"handle": "vitaliplay",
-			"links": [
-				{
-					"handle": "github",
-					"url": "https://github.com/bdauphouy/vitaliplay"
-				},
-				{
-					"handle": "website",
-					"url": "https://vitaliplay.fr"
-				}
-			]
-		}
-	]
+	}
 }

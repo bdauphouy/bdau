@@ -23,9 +23,6 @@
 		day: 'numeric'
 	});
 
-	const getProjectGlobals = (handle: string) =>
-		data.content.globals.projects.find((project) => project.handle === handle)!;
-
 	const handleTimelineItemIntersect = (event: CustomEvent<number>) => {
 		currentTimelineItemIndex = event.detail;
 	};
@@ -68,20 +65,8 @@
 <section class="py-12 md:py-32">
 	<ul class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
 		{#each data.content.projects as project}
-			{@const projectGlobals = getProjectGlobals(project.handle)}
 			<li>
-				<Project
-					project={{
-						...project,
-						...projectGlobals,
-						links:
-							projectGlobals.links &&
-							projectGlobals.links.map((link) => ({
-								...(project.links && project.links.find(({ handle }) => handle === link.handle)),
-								...link
-							}))
-					}}
-				/>
+				<Project {project} />
 			</li>
 		{/each}
 	</ul>

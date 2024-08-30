@@ -6,7 +6,6 @@ export type Badge = {
 };
 
 export type Link = {
-	handle: string;
 	title: string;
 	url: string;
 };
@@ -25,7 +24,7 @@ export type TimelineItem = {
 };
 
 export type Project = {
-	handle: string;
+	id: string;
 	title: string;
 	description: string;
 	badges?: Badge[];
@@ -40,9 +39,7 @@ export type PageContent = {
 	resume: {
 		title: string;
 	};
-	projects: (Pick<Project, 'handle' | 'description' | 'badges'> & {
-		links?: Pick<Link, 'handle' | 'title'>[];
-	})[];
+	projects: Project[];
 	timeline: {
 		technologiesTitle: string;
 		membersTitle: string;
@@ -67,5 +64,4 @@ export type PageGlobals = {
 		malt: string;
 		x: string;
 	};
-	projects: (Pick<Project, 'title' | 'handle'> & { links?: Pick<Link, 'handle', 'url'>[] })[];
 };

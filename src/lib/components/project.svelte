@@ -21,7 +21,7 @@
 		{/if}
 		<img
 			class="transition-all duration-300 group-focus-within:opacity-25 group-focus-within:blur-sm group-hover:opacity-25 group-hover:blur-sm"
-			src="/images/projects/{project.handle}.png"
+			src="/images/projects/{project.id}.png"
 			alt={project.title}
 		/>
 	</div>

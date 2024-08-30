@@ -21,7 +21,8 @@
 	},
 	"projects": [
 		{
-			"handle": "shopiette",
+			"id": "shopiette",
+			"title": "Shopiette",
 			"description": "Créez rapidement des sites e-commerce avec Svelte.",
 			"badges": [
 				{
@@ -31,40 +32,42 @@
 			],
 			"links": [
 				{
-					"handle": "github",
-					"title": "Voir le Github"
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/shopiette"
 				},
 				{
-					"handle": "website",
-					"title": "Voir le site"
+					"title": "Voir le site",
+					"url": "https://shopiette.bdau.fr"
 				}
 			]
 		},
 		{
-			"handle": "vintify",
+			"id": "vintify",
+			"title": "Vintify",
 			"description": "Importez facilement vos produits Vinted sur Shopify.",
 			"links": [
 				{
-					"handle": "github",
-					"title": "Voir le Github"
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/vintify"
 				},
 				{
-					"handle": "website",
-					"title": "Voir le site"
+					"title": "Voir le site",
+					"url": "https://vintify.bdau.fr"
 				}
 			]
 		},
 		{
-			"handle": "vitaliplay",
+			"id": "vitaliplay",
+			"title": "Vitaliplay",
 			"description": "Vitaliplay est une plateforme sportive pour les seniors.",
 			"links": [
 				{
-					"handle": "github",
-					"title": "Voir le Github"
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/vitaliplay"
 				},
 				{
-					"handle": "website",
-					"title": "Voir le site"
+					"title": "Voir le site",
+					"url": "https://vitaliplay.fr"
 				}
 			]
 		}
