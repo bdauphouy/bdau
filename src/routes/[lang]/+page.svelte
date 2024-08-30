@@ -181,7 +181,7 @@
 	</div>
 	<div class="flex w-full flex-col items-center self-center sm:w-3/4">
 		<Timeline items={orderedTimelineItems} on:intersect={handleTimelineItemIntersect} />
-		<Badge variant="secondary">Scroll to explore</Badge>
+		<Badge variant="secondary">{data.content.timeline.scrollToExploreTitle}</Badge>
 	</div>
 </section>
 

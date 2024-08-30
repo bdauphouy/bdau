@@ -46,6 +46,7 @@ export type PageContent = {
 		membersTitle: string;
 		linkTitle: string;
 		learnMoreTitle: string;
+		scrollToExploreTitle: string;
 		items: TimelineItem[];
 	};
 	contact: {
