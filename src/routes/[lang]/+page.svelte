@@ -3,6 +3,7 @@
 	import Button from '$lib/components/button.svelte';
 	import Project from '$lib/components/project.svelte';
 	import ResumeSpinner from '$lib/components/resume-spinner.svelte';
+	import TimelineContent from '$lib/components/timeline-content.svelte';
 	import Timeline from '$lib/components/timeline.svelte';
 	import { fade } from 'svelte/transition';
 	import type { PageData } from './$types';
@@ -10,6 +11,7 @@
 	export let data: PageData;
 
 	let currentTimelineItemIndex = 0;
+	let isTimelineItemContentExpanded = false;
 
 	$: orderedTimelineItems = data.content.timeline.items.sort(
 		(a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
@@ -25,6 +27,12 @@
 
 	const handleTimelineItemIntersect = (event: CustomEvent<number>) => {
 		currentTimelineItemIndex = event.detail;
+	};
+
+	const handleIsTimelineItemContentExpanded = () => {
+		isTimelineItemContentExpanded = !isTimelineItemContentExpanded;
+
+		document.body.style.overflow = isTimelineItemContentExpanded ? 'hidden' : 'auto';
 	};
 </script>
 
@@ -74,18 +82,31 @@
 
 <section
 	id="timeline-section"
-	class="flex h-screen flex-col-reverse justify-end gap-12 py-12 md:gap-20 lg:grid lg:h-auto lg:grid-cols-2 lg:py-32"
+	class="flex h-screen flex-col-reverse justify-start gap-12 py-6 md:gap-20 md:py-12 lg:grid lg:h-auto lg:grid-cols-2 lg:py-32"
 >
-	<div class="flex max-w-sm flex-col gap-12 lg:max-w-full">
+	{#if isTimelineItemContentExpanded}
+		<TimelineContent
+			{currentTimelineItem}
+			membersTitle={data.content.timeline.membersTitle}
+			technologiesTitle={data.content.timeline.technologiesTitle}
+			on:close={handleIsTimelineItemContentExpanded}
+		/>
+	{/if}
+	<div
+		class="flex h-2/5 max-w-md flex-col justify-end gap-8 transition-colors duration-300 md:max-w-lg lg:h-auto lg:justify-start lg:gap-12"
+	>
 		{#key currentTimelineItemIndex}
 			<h2 in:fade class="text-4xl font-medium lg:text-5xl">
 				{currentTimelineItem.title}
 			</h2>
-			<div in:fade={{ delay: 200 }} class="flex flex-col gap-8">
+			<div in:fade={{ delay: 200 }} class="flex flex-col gap-6 lg:gap-8">
 				<p class="text-lg">
 					{currentTimelineItem.text}
 				</p>
-				<div class="flex flex-col gap-6 md:flex-row md:gap-8">
+				<div class="self-start md:hidden">
+					<Button on:click={handleIsTimelineItemContentExpanded}>Learn more</Button>
+				</div>
+				<div class="hidden flex-col gap-6 md:flex lg:gap-8">
 					{#if currentTimelineItem.technologies && currentTimelineItem.technologies.length > 0}
 						<div class="flex flex-col gap-4">
 							<h3 class="text-md font-medium text-secondary/60">
@@ -118,7 +139,7 @@
 			</div>
 		{/key}
 	</div>
-	<div class="flex w-80 flex-col items-center self-center md:w-1/2 lg:w-full">
+	<div class="flex w-full flex-col items-center self-center sm:w-3/4">
 		<Timeline items={orderedTimelineItems} on:intersect={handleTimelineItemIntersect} />
 		<Badge variant="secondary">Scroll to explore</Badge>
 	</div>
