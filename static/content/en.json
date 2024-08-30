@@ -75,6 +75,8 @@
 	"timeline": {
 		"technologiesTitle": "Technologies used",
 		"membersTitle": "Project members",
+		"linkTitle": "View the project",
+		"learnMoreTitle": "Learn more",
 		"items": [
 			{
 				"date": "09/01/2018",

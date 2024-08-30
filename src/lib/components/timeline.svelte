@@ -89,9 +89,6 @@
 	class="absolute h-6 w-6 rounded-full md:h-8 md:w-8"
 />
 <svg viewBox="0 0 10.5 8" xmlns="http://www.w3.org/2000/svg">
-	{#each items as _, i}
-		<circle id="point-{i}" r="0.1" class="fill-secondary" />
-	{/each}
 	<path
 		id="timeline-path"
 		d="M9,1 L3,1 C1,1 1,3 3,3 L7,3 C9,3 9,5 7,5 L3,5 C1,5 1,7 3,7 L9,7"
@@ -99,4 +96,7 @@
 		stroke-linecap="round"
 		class="fill-none stroke-secondary"
 	/>
+	{#each items as _, i}
+		<circle id="point-{i}" r="0.1" class="fill-secondary" />
+	{/each}
 </svg>

@@ -25,11 +25,26 @@
 		day: 'numeric'
 	});
 
+	$: displayLearnMoreButton =
+		currentTimelineItem.text.length > 200 ||
+		(currentTimelineItem.technologies && currentTimelineItem.technologies.length > 0) ||
+		(currentTimelineItem.members && currentTimelineItem.members.length > 0);
+
+	const shorterText = (text: string) => {
+		const maxLength = 200;
+
+		if (text.length > maxLength) {
+			return text.slice(0, maxLength) + '...';
+		}
+
+		return text;
+	};
+
 	const handleTimelineItemIntersect = (event: CustomEvent<number>) => {
 		currentTimelineItemIndex = event.detail;
 	};
 
-	const handleIsTimelineItemContentExpanded = () => {
+	const handleContentExpand = () => {
 		isTimelineItemContentExpanded = !isTimelineItemContentExpanded;
 
 		document.body.style.overflow = isTimelineItemContentExpanded ? 'hidden' : 'auto';
@@ -89,7 +104,7 @@
 			{currentTimelineItem}
 			membersTitle={data.content.timeline.membersTitle}
 			technologiesTitle={data.content.timeline.technologiesTitle}
-			on:close={handleIsTimelineItemContentExpanded}
+			on:close={handleContentExpand}
 		/>
 	{/if}
 	<div
@@ -100,12 +115,37 @@
 				{currentTimelineItem.title}
 			</h2>
 			<div in:fade={{ delay: 200 }} class="flex flex-col gap-6 lg:gap-8">
-				<p class="text-lg">
+				<p class="block text-lg md:hidden">
+					{shorterText(currentTimelineItem.text)}
+				</p>
+				<p class="hidden text-lg md:block">
 					{currentTimelineItem.text}
 				</p>
-				<div class="self-start md:hidden">
-					<Button on:click={handleIsTimelineItemContentExpanded}>Learn more</Button>
-				</div>
+				{#if currentTimelineItem.link}
+					<div class="hidden self-start md:flex">
+						<Button as="a" href={currentTimelineItem.link}>
+							{data.content.timeline.linkTitle}
+						</Button>
+					</div>
+				{/if}
+				{#if currentTimelineItem.text || displayLearnMoreButton}
+					<div class="flex items-center gap-4 md:hidden">
+						{#if currentTimelineItem.link}
+							<div class="flex self-start">
+								<Button as="a" href={currentTimelineItem.link}>
+									{data.content.timeline.linkTitle}
+								</Button>
+							</div>
+						{/if}
+						{#if displayLearnMoreButton}
+							<div class="inline-flex md:hidden">
+								<Button on:click={handleContentExpand}>
+									{data.content.timeline.learnMoreTitle}
+								</Button>
+							</div>
+						{/if}
+					</div>
+				{/if}
 				<div class="hidden flex-col gap-6 md:flex lg:gap-8">
 					{#if currentTimelineItem.technologies && currentTimelineItem.technologies.length > 0}
 						<div class="flex flex-col gap-4">

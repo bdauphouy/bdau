@@ -19,6 +19,7 @@ export type TimelineItem = {
 	date: string;
 	title: string;
 	text: string;
+	link?: string;
 	technologies?: string[];
 	members?: TimelineItemMember[];
 };
@@ -43,6 +44,8 @@ export type PageContent = {
 	timeline: {
 		technologiesTitle: string;
 		membersTitle: string;
+		linkTitle: string;
+		learnMoreTitle: string;
 		items: TimelineItem[];
 	};
 	contact: {
