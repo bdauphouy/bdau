@@ -54,6 +54,7 @@ export type PageContent = {
 	};
 	footer: {
 		text: string;
+		lastUpdateTitle: string;
 	};
 };
 

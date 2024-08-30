@@ -11,14 +11,20 @@
 
 	let currentTimelineItemIndex = 0;
 
-	const getProjectGlobals = (handle: string) =>
-		data.content.globals.projects.find((project) => project.handle === handle)!;
-
 	$: orderedTimelineItems = data.content.timeline.items.sort(
 		(a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
 	);
 
 	$: currentTimelineItem = orderedTimelineItems[currentTimelineItemIndex];
+
+	$: lastUpdate = data.lastUpdate.toLocaleDateString(data.lang, {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	});
+
+	const getProjectGlobals = (handle: string) =>
+		data.content.globals.projects.find((project) => project.handle === handle)!;
 
 	const handleTimelineItemIntersect = (event: CustomEvent<number>) => {
 		currentTimelineItemIndex = event.detail;
@@ -163,6 +169,7 @@
 	</div>
 </section>
 
-<footer class="text-left text-sm text-secondary/60">
+<footer class="flex flex-col justify-between gap-2 text-sm text-secondary/60 md:flex-row">
 	<p>{data.content.footer.text}</p>
+	<p>{data.content.footer.lastUpdateTitle} {lastUpdate}.</p>
 </footer>

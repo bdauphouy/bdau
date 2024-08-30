@@ -162,6 +162,7 @@
 		"subtitle": "Did you like my presentation and want to work with me? Contact me by email or via my social networks."
 	},
 	"footer": {
-		"text": "Made with Svelte and love by Baptiste Dauphouy."
+		"text": "Made with Svelte and love by Baptiste Dauphouy.",
+		"lastUpdateTitle": "Updated the"
 	}
 }

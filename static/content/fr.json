@@ -162,6 +162,7 @@
 		"subtitle": "Ma présentation vous a plu et vous souhaitez travailler avec moi ? Contactez-moi par e-mail ou via mes réseaux sociaux."
 	},
 	"footer": {
-		"text": "Fait avec Svelte et amour par Baptiste Dauphouy."
+		"text": "Fait avec Svelte et amour par Baptiste Dauphouy.",
+		"lastUpdateTitle": "Mis à jour le"
 	}
 }
