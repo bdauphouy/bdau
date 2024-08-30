@@ -83,10 +83,10 @@
 </script>
 
 <img
-	src="/images/logo.png"
+	src="/images/timeline.png"
 	alt="Baptiste Dauphouy"
 	id="circle"
-	class="absolute h-6 w-6 rounded-full md:h-8 md:w-8"
+	class="absolute h-6 w-6 rounded-full ring-2 ring-secondary/20 md:h-8 md:w-8"
 />
 <svg viewBox="0 0 10.5 8" xmlns="http://www.w3.org/2000/svg">
 	<path
