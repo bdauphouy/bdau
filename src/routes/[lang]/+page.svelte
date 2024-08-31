@@ -32,7 +32,7 @@
 		(currentTimelineItem.members && currentTimelineItem.members.length > 0);
 
 	const shorterText = (text: string) => {
-		const maxLength = 200;
+		const maxLength = 150;
 
 		if (text.length > maxLength) {
 			return text.slice(0, maxLength) + '...';
@@ -47,8 +47,6 @@
 
 	const handleContentExpand = () => {
 		isTimelineItemContentExpanded = !isTimelineItemContentExpanded;
-
-		document.body.style.overflow = isTimelineItemContentExpanded ? 'hidden' : 'auto';
 	};
 </script>
 
@@ -146,7 +144,7 @@
 						</Button>
 					</div>
 				{/if}
-				{#if currentTimelineItem.text || displayLearnMoreButton}
+				{#if currentTimelineItem.link || displayLearnMoreButton}
 					<div class="flex items-center gap-4 md:hidden">
 						{#if currentTimelineItem.link}
 							<div class="flex self-start">

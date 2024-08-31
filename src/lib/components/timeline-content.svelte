@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
+	import { createEventDispatcher, onDestroy, onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
 	import Badge from './badge.svelte';
 	import Button from './button.svelte';
@@ -14,6 +14,14 @@
 	const handleClose = () => {
 		dispatch('close');
 	};
+
+	onMount(() => {
+		document.body.style.overflow = 'hidden';
+	});
+
+	onDestroy(() => {
+		document.body.style.overflow = 'auto';
+	});
 </script>
 
 <div
