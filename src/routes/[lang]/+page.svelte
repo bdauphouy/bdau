@@ -54,16 +54,24 @@
 	<title>{data.content.meta.title}</title>
 	<meta name="description" content={data.content.meta.description} />
 	<meta name="robots" content="index, follow" />
+	<meta name="author" content={data.content.globals.meta.name} />
 	<meta name="theme-color" content="#04041e" />
 	<meta property="og:title" content={data.content.meta.title} />
+	<meta property="og:description" content={data.content.meta.description} />
+	<meta property="og:image" content="https://bdau.fr/images/meta/og-image.png" />
+	<meta property="og:url" content="https://{$page.url.host}/{data.lang}" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://{$page.url.host}/images/meta/og-image.png" />
-	<meta property="og:url" content="https://{$page.url.host}" />
+	<meta property="og:site_name" content={data.content.globals.meta.name} />
+	<meta property="og:locale" content={data.lang} />
+	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content={data.content.meta.title} />
+	<meta name="twitter:description" content={data.content.meta.description} />
+	<meta property="twitter:image" content="https://bdau.fr/images/meta/og-image.png" />
+	<meta property="twitter:url" content="https://{$page.url.host}/{data.lang}" />
 	<meta name="twitter:site" content={data.content.globals.meta.twitter} />
 	<meta name="twitter:creator" content={data.content.globals.meta.twitter} />
 	<meta name="keywords" content={data.content.globals.meta.keywords} />
-	<meta name="author" content={data.content.globals.meta.name} />
 </svelte:head>
 
 <section class="flex justify-start pb-12 pt-20 md:justify-center md:py-32">
