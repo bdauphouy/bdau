@@ -120,6 +120,7 @@
 			{currentTimelineItem}
 			membersTitle={data.content.timeline.membersTitle}
 			technologiesTitle={data.content.timeline.technologiesTitle}
+			closeTitle={data.content.timeline.closeTitle}
 			on:close={handleContentExpand}
 		/>
 	{/if}

@@ -6,6 +6,7 @@
 
 	export let currentTimelineItem;
 	export let technologiesTitle;
+	export let closeTitle;
 	export let membersTitle;
 
 	const dispatch = createEventDispatcher();
@@ -21,7 +22,7 @@
 	out:slide={{ duration: 300 }}
 >
 	<div class="self-end">
-		<Button on:click={handleClose}>Fermer</Button>
+		<Button on:click={handleClose}>{closeTitle}</Button>
 	</div>
 	<h2 class="text-4xl font-medium lg:text-5xl">
 		{currentTimelineItem.title}

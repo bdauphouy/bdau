@@ -50,6 +50,7 @@ export type PageContent = {
 		membersTitle: string;
 		linkTitle: string;
 		learnMoreTitle: string;
+		closeTitle: string;
 		scrollToExploreTitle: string;
 		items: TimelineItem[];
 	};
