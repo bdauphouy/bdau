@@ -56,6 +56,7 @@
 	<title>{data.content.meta.title}</title>
 	<meta name="description" content={data.content.meta.description} />
 	<meta name="robots" content="index, follow" />
+	<meta name="theme-color" content="#04041e" />
 	<meta property="og:title" content={data.content.meta.title} />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://{$page.url.host}/images/meta/og-image.png" />
