@@ -1,6 +1,11 @@
 {
 	"isAvailable": true,
 	"email": "mail@bdau.es",
+	"meta": {
+		"name": "Baptiste Dauphouy",
+		"twitter": "@bdauphouy",
+		"keywords": "baptiste dauphouy"
+	},
 	"socials": {
 		"github": "https://github.com/bdauphouy",
 		"linkedin": "https://linkedin.com/in/baptiste-dauphouy",

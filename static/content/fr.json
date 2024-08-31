@@ -1,4 +1,8 @@
 {
+	"meta": {
+		"title": "Baptiste Dauphouy • Portfolio",
+		"description": "Bonjour, je suis Baptiste Dauphouy, développeur full-stack."
+	},
 	"landing": {
 		"title": "Bonjour,\nje suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
 		"badges": [

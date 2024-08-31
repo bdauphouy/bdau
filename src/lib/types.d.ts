@@ -33,6 +33,10 @@ export type Project = {
 };
 
 export type PageContent = {
+	meta: {
+		title: string;
+		description: string;
+	};
 	landing: {
 		title: string;
 		badges?: Badge[];
@@ -62,6 +66,11 @@ export type PageContent = {
 export type PageGlobals = {
 	isAvailable: boolean;
 	email: string;
+	meta: {
+		name: string;
+		twitter: string;
+		keywords: string;
+	};
 	socials: {
 		github: string;
 		linkedin: string;
