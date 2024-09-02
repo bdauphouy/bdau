@@ -45,7 +45,7 @@
 					<h3 class="text-md font-medium text-secondary/60">
 						{technologiesTitle}
 					</h3>
-					<ul class="flex items-center gap-4">
+					<ul class="flex flex-wrap items-center gap-4">
 						{#each currentTimelineItem.technologies as technology}
 							<li>
 								<Badge variant="secondary">{technology}</Badge>

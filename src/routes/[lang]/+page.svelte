@@ -74,7 +74,7 @@
 	<meta name="keywords" content={data.content.globals.meta.keywords} />
 </svelte:head>
 
-<section class="flex justify-start pb-12 pt-20 md:justify-center md:py-32">
+<section class="flex justify-start pb-12 pt-20 md:justify-center md:py-[10vh]">
 	<div class="flex flex-col gap-8">
 		{#if data.content.landing.badges && data.content.landing.badges.length > 0}
 			<ul class="flex flex-wrap items-center gap-4">
@@ -108,7 +108,7 @@
 	</div>
 </section>
 
-<section class="py-12 md:py-32">
+<section class="py-12 md:py-[10vh]">
 	<ul class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
 		{#each data.content.projects as project}
 			<li>
@@ -203,13 +203,13 @@
 			</div>
 		{/key}
 	</div>
-	<div class="flex w-full flex-col items-center self-center sm:w-3/4">
+	<div class="flex w-full flex-col items-center">
 		<Timeline items={orderedTimelineItems} on:intersect={handleTimelineItemIntersect} />
 		<Badge variant="secondary">{data.content.timeline.scrollToExploreTitle}</Badge>
 	</div>
 </section>
 
-<section class="flex flex-col-reverse gap-12 py-12 md:gap-20 md:py-32 lg:grid lg:grid-cols-3">
+<section class="flex flex-col-reverse gap-12 py-12 md:gap-20 md:py-[10vh] lg:grid lg:grid-cols-3">
 	<div class="col-span-2">
 		<h3 class="text-4xl font-medium lg:text-5xl">
 			{data.content.contact.title}

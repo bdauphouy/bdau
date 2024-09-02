@@ -24,7 +24,7 @@
 				scrub: true,
 				pin: true,
 				onUpdate: ({ progress }) => {
-					const currentRoundedProgress = Math.round(progress * 50) / 50;
+					const currentRoundedProgress = Math.floor(progress * 50) / 50;
 
 					if (currentRoundedProgress === roundedProgress) return;
 
@@ -66,7 +66,7 @@
 		const firstDateInMs = new Date(items[0].date).getTime();
 		const lastDateInMs = new Date(items[items.length - 1].date).getTime();
 
-		return Math.round(((dateInMs - firstDateInMs) / (lastDateInMs - firstDateInMs)) * 50) / 50;
+		return Math.floor(((dateInMs - firstDateInMs) / (lastDateInMs - firstDateInMs)) * 50) / 50;
 	};
 
 	const getAllPointsPositions = () => {

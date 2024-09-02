@@ -126,6 +126,7 @@
 				"date": "01/01/2022",
 				"title": "janvier 2022",
 				"text": "Travail pour un client qui a comme projet de faire un réseaux social axé sur les compétences professionnelles des utilisateurs, adressé notamment aux développeurs et aux designers.",
+				"link": "https://byoss.me",
 				"technologies": ["React.js", "Taiwind"]
 			},
 			{
@@ -159,12 +160,49 @@
 			{
 				"date": "08/01/2022",
 				"title": "août 2022",
-				"text": "Début de mon alternance chez Radio France."
+				"text": "Début de mon alternance chez Radio France. Ma mission : intégrer les nouveaux composants du Design System. J'ai de la chance, j'ai l'opportunité de travailler avec ma stack préférée : Svelte",
+				"link": "https://www.radiofrance.fr",
+				"technologies": ["SvelteKit", "TypeScript", "GraphQL"]
+			},
+			{
+				"date": "11/01/2022",
+				"title": "novembre 2022",
+				"text": "Création du site internet de mon père, qui travaille dans le bâtiment.",
+				"link": "https://tvti.fr",
+				"technologies": ["SvelteKit", "TypeScript"]
+			},
+			{
+				"date": "02/01/2023",
+				"title": "février 2023",
+				"text": "Byoss me recontacte pour la nouvelle UI de leur réseaux social pour développeurs & designers.",
+				"link": "https://byoss.me",
+				"technologies": ["React.js", "Tailwind", "GraphQL"]
+			},
+			{
+				"date": "09/01/2023",
+				"title": "septembre 2023",
+				"text": "Création d'une boutique e-commerce pour un ami qui vend des cartes Pokémon",
+				"link": "https://miragetcg.com",
+				"technologies": ["Shopify"]
+			},
+			{
+				"date": "07/01/2024",
+				"title": "juillet 2024",
+				"text": "Début du développement de Shopiette. L'idée : un kit d'outils permettant de développer des applications e-commerce avec SvelteKit et Tailwind. Pour l'instant, j'ai plus fait un POC afin de voir comment construire le projet, mais dans le futur j'ai prévu de créer un SDK permettant d'intéragir avec les données d'une boutique Shopify, un UI kit construit avec Tailwind, regroupant des blocs et de composants pour le e-commerce, ainsi qu'un CLI pour relier les deux et générer un thème sur mesure.",
+				"link": "https://github.com/bdauphouy/shopiette",
+				"technologies": ["SvelteKit", "TypeScript", "Tailwind", "Shopify", "GraphQL"]
+			},
+			{
+				"date": "08/01/2024",
+				"title": "août 2024",
+				"text": "Mise à jour de mon portfolio. Je décide de changer de stack, en passant de React à Svelte. Un petit coup de fraîcheur, plus de performance, d'accessibilité, de l'internationalisation et une expérience utilisateur meilleure.",
+				"link": "https://bdau.fr",
+				"technologies": ["SvelteKit", "TypeScript", "Tailwind"]
 			},
 			{
 				"date": "09/01/2024",
 				"title": "Aujourd'hui",
-				"text": "Contenu à venir."
+				"text": "Mon alternance chez Radio France se termine fin septembre. Je prépare mon déménagement à Valence en Espagne et recherche un poste de développeur full-stack en remote pour début octobre."
 			}
 		]
 	},
