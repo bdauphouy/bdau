@@ -1,10 +1,10 @@
 {
 	"meta": {
 		"title": "Baptiste Dauphouy • Portfolio",
-		"description": "Hello, I am Baptiste Dauphouy, full-stack developer."
+		"description": "Hello, I am Baptiste Dauphouy, a full-stack developer."
 	},
 	"landing": {
-		"title": "Hello,\nI am Baptiste Dauphouy,\nfull-stack developer.",
+		"title": "Hello,\nI am Baptiste Dauphouy,\na full-stack developer.",
 		"badges": [
 			{
 				"handle": "available",
@@ -36,11 +36,11 @@
 			],
 			"links": [
 				{
-					"title": "View on Github",
+					"title": "View Github",
 					"url": "https://github.com/bdauphouy/shopiette"
 				},
 				{
-					"title": "Visit the site",
+					"title": "View Website",
 					"url": "https://shopiette.bdau.fr"
 				}
 			]
@@ -48,14 +48,14 @@
 		{
 			"id": "vintify",
 			"title": "Vintify",
-			"description": "Easily import your Vinted products to Shopify.",
+			"description": "Easily import your Vinted products into Shopify.",
 			"links": [
 				{
-					"title": "View on Github",
+					"title": "View Github",
 					"url": "https://github.com/bdauphouy/vintify"
 				},
 				{
-					"title": "Visit the site",
+					"title": "View Website",
 					"url": "https://vintify.bdau.fr"
 				}
 			]
@@ -66,73 +66,74 @@
 			"description": "Vitaliplay is a sports platform for seniors.",
 			"links": [
 				{
-					"title": "View on Github",
+					"title": "View Github",
 					"url": "https://github.com/bdauphouy/vitaliplay"
 				},
 				{
-					"title": "Visit the site",
+					"title": "View Website",
 					"url": "https://vitaliplay.fr"
 				}
 			]
 		}
 	],
 	"timeline": {
-		"technologiesTitle": "Technologies used",
-		"membersTitle": "Project members",
-		"linkTitle": "View the project",
-		"learnMoreTitle": "Learn more",
+		"technologiesTitle": "Technologies Used",
+		"membersTitle": "Project Members",
+		"linkTitle": "View Project",
+		"learnMoreTitle": "Learn More",
 		"closeTitle": "Close",
-		"scrollToExploreTitle": "Scroll to explore",
+		"scrollToExploreTitle": "Scroll to Explore",
 		"items": [
 			{
 				"date": "09/01/2018",
 				"title": "September 2018",
-				"text": "Discovery of HTML and CSS in sophomore year of high school."
+				"text": "Discovered HTML and CSS in the sophomore year of high school."
 			},
 			{
 				"date": "07/02/2019",
 				"title": "2019",
-				"text": "Creation of various projects, I explore, discover, and learn Javascript."
+				"text": "Created various projects, explored, discovered, and learned JavaScript."
 			},
 			{
 				"date": "03/01/2020",
 				"title": "March 2020",
-				"text": "Getting back into coding after a few months' break. Lockdown begins, and I need to do something productive with my days instead of playing Fortnite."
+				"text": "Got back into coding after a few months break. The lockdown began, and I needed to do something productive with my days instead of playing Fortnite."
 			},
 			{
 				"date": "06/01/2020",
 				"title": "June 2020",
-				"text": "I find my first client who is willing to pay me to develop his site: Flexomatic. In the end, he never paid me :(",
-				"technologies": ["HTML", "CSS", "Javascript"]
+				"text": "Found my first client who was willing to pay me to develop their site: Flexomatic. Unfortunately, they never paid me :(",
+				"technologies": ["HTML", "CSS", "JavaScript"]
 			},
 			{
 				"date": "05/01/2021",
 				"title": "May 2021",
-				"text": "Creation of my first \"serious\" portfolio and purchase of my domain bdph.me (which I no longer own).",
+				"text": "Created my first 'serious' portfolio and purchased my domain bdph.me (which I no longer own).",
 				"technologies": ["React.js", "Styled Components"]
 			},
 			{
 				"date": "09/01/2021",
 				"title": "September 2021",
-				"text": "I move from my countryside to Paris, prepare for my school start, and make the final adjustments to my portfolio."
+				"text": "Moved from my hometown to Paris, prepared for the new school year, and made the final adjustments to my portfolio."
 			},
 			{
 				"date": "11/01/2021",
 				"title": "November 2021",
-				"text": "First freelance mission for a client who finally pays me! Synerg'hetic, an association at HETIC offering missions to its students, trusts me. The project: Vitaliplay, an online sports platform for seniors. I take care of the front-end and choose to use the React stack.",
-				"technologies": ["Next.js", "Taiwind"]
+				"text": "First freelance mission for a client who finally paid me! Synerg'hetic, an association at HETIC offering projects to its students, trusted me. The project: Vitaliplay, an online sports platform for seniors. I handled the front-end and chose to use the React stack.",
+				"technologies": ["Next.js", "Tailwind"]
 			},
 			{
 				"date": "01/01/2022",
 				"title": "January 2022",
-				"text": "Working for a client with a project to create a social network focused on users' professional skills, especially for developers and designers.",
-				"technologies": ["React.js", "Taiwind"]
+				"text": "Worked for a client whose project was to create a social network focused on users' professional skills, targeting developers and designers in particular.",
+				"link": "https://byoss.me",
+				"technologies": ["React.js", "Tailwind"]
 			},
 			{
 				"date": "04/01/2022",
 				"title": "April 2022",
-				"text": "Creation of a browser RPG as a group project for a school project. The result impresses the entire class.",
-				"technologies": ["HTML", "CSS", "Javascript"],
+				"text": "Created a browser-based RPG with a group as part of a school project. The result impressed the whole class.",
+				"technologies": ["HTML", "CSS", "JavaScript"],
 				"members": [
 					{
 						"name": "Arthur",
@@ -159,21 +160,58 @@
 			{
 				"date": "08/01/2022",
 				"title": "August 2022",
-				"text": "Start of my internship at Radio France."
+				"text": "Started my internship at Radio France. My mission: integrate the new components of the Design System. I’m lucky to have the opportunity to work with my favorite stack: Svelte.",
+				"link": "https://www.radiofrance.fr",
+				"technologies": ["SvelteKit", "TypeScript", "GraphQL"]
+			},
+			{
+				"date": "11/01/2022",
+				"title": "November 2022",
+				"text": "Created a website for my father, who works in construction.",
+				"link": "https://tvti.fr",
+				"technologies": ["SvelteKit", "TypeScript"]
+			},
+			{
+				"date": "02/01/2023",
+				"title": "February 2023",
+				"text": "Byoss contacted me again for the new UI of their social network for developers and designers.",
+				"link": "https://byoss.me",
+				"technologies": ["React.js", "Tailwind", "GraphQL"]
+			},
+			{
+				"date": "09/01/2023",
+				"title": "September 2023",
+				"text": "Created an e-commerce store for a friend who sells Pokémon cards.",
+				"link": "https://miragetcg.com",
+				"technologies": ["Shopify"]
+			},
+			{
+				"date": "07/01/2024",
+				"title": "July 2024",
+				"text": "Started developing Shopiette. The idea: a toolkit to develop e-commerce applications with SvelteKit and Tailwind. So far, I’ve mostly made a POC to see how to build the project, but in the future, I plan to create an SDK that allows interaction with Shopify store data, a UI kit built with Tailwind, gathering blocks and components for e-commerce, and a CLI to connect the two and generate a custom theme.",
+				"link": "https://github.com/bdauphouy/shopiette",
+				"technologies": ["SvelteKit", "TypeScript", "Tailwind", "Shopify", "GraphQL"]
+			},
+			{
+				"date": "08/01/2024",
+				"title": "August 2024",
+				"text": "Updated my portfolio. I decided to change stacks, moving from React to Svelte. A bit of freshness, more performance, accessibility, internationalization, and a better user experience.",
+				"link": "https://bdau.fr",
+				"technologies": ["SvelteKit", "TypeScript", "Tailwind"]
 			},
 			{
 				"date": "09/01/2024",
 				"title": "Today",
-				"text": "Content coming soon."
+				"text": "My internship at Radio France ends at the end of September. I am preparing my move to Valencia, Spain, and looking for a full-stack developer position working remotely, starting in early October."
 			}
 		]
 	},
 	"contact": {
 		"title": "Contact",
-		"subtitle": "Did you like my presentation and want to work with me? Contact me by email or via my social networks."
+		"subtitle": "Did you enjoy my presentation and want to work with me? Contact me by email or via my social networks."
 	},
 	"footer": {
 		"text": "Made with Svelte and love by Baptiste Dauphouy.",
-		"lastUpdateTitle": "Updated the"
+		"lastUpdateTitle": "Last updated on"
 	}
 }

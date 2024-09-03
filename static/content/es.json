@@ -27,7 +27,7 @@
 		{
 			"id": "shopiette",
 			"title": "Shopiette",
-			"description": "Crea rápidamente sitios de comercio electrónico con Svelte.",
+			"description": "Cree rápidamente sitios de comercio electrónico con Svelte.",
 			"badges": [
 				{
 					"handle": "in-progress",
@@ -36,7 +36,7 @@
 			],
 			"links": [
 				{
-					"title": "Ver en Github",
+					"title": "Ver el Github",
 					"url": "https://github.com/bdauphouy/shopiette"
 				},
 				{
@@ -48,10 +48,10 @@
 		{
 			"id": "vintify",
 			"title": "Vintify",
-			"description": "Importa fácilmente tus productos Vinted en Shopify.",
+			"description": "Importe fácilmente sus productos de Vinted a Shopify.",
 			"links": [
 				{
-					"title": "Ver en Github",
+					"title": "Ver el Github",
 					"url": "https://github.com/bdauphouy/vintify"
 				},
 				{
@@ -66,7 +66,7 @@
 			"description": "Vitaliplay es una plataforma deportiva para personas mayores.",
 			"links": [
 				{
-					"title": "Ver en Github",
+					"title": "Ver el Github",
 					"url": "https://github.com/bdauphouy/vitaliplay"
 				},
 				{
@@ -80,7 +80,7 @@
 		"technologiesTitle": "Tecnologías utilizadas",
 		"membersTitle": "Miembros del proyecto",
 		"linkTitle": "Ver el proyecto",
-		"learnMoreTitle": "Aprende más",
+		"learnMoreTitle": "Saber más",
 		"closeTitle": "Cerrar",
 		"scrollToExploreTitle": "Desplázate para explorar",
 		"items": [
@@ -92,18 +92,18 @@
 			{
 				"date": "07/02/2019",
 				"title": "2019",
-				"text": "Creación de diversos proyectos, exploro, descubro y aprendo Javascript."
+				"text": "Creación de varios proyectos, exploro, descubro y aprendo JavaScript."
 			},
 			{
 				"date": "03/01/2020",
 				"title": "marzo 2020",
-				"text": "Puesta al día en programación después de una pausa de unos meses. Empieza el confinamiento y necesito hacer algo productivo con mis días en lugar de jugar a Fortnite."
+				"text": "Reciclaje en programación después de una pausa de unos meses. Comienza el confinamiento, y tengo que hacer algo productivo durante mis días en lugar de jugar a Fortnite."
 			},
 			{
 				"date": "06/01/2020",
 				"title": "junio 2020",
-				"text": "Encuentro a mi primer cliente que está dispuesto a pagarme para que desarrolle su sitio: Flexomatic. Al final, nunca me pagó :(",
-				"technologies": ["HTML", "CSS", "Javascript"]
+				"text": "Encuentro a mi primer cliente dispuesto a pagarme para desarrollar su sitio: Flexomatic. Finalmente, nunca me pagó :(",
+				"technologies": ["HTML", "CSS", "JavaScript"]
 			},
 			{
 				"date": "05/01/2021",
@@ -114,25 +114,26 @@
 			{
 				"date": "09/01/2021",
 				"title": "septiembre 2021",
-				"text": "Me mudo de mi campo a París, preparo mi regreso a clases y hago los últimos ajustes en mi portafolio."
+				"text": "Dejo mi pueblo para ir a París, me preparo para el comienzo del año escolar y hago los últimos ajustes en mi portafolio."
 			},
 			{
 				"date": "11/01/2021",
 				"title": "noviembre 2021",
-				"text": "Primera misión freelance para un cliente que finalmente me paga! Synerg'hetic, una asociación en HETIC que ofrece misiones a sus estudiantes, confía en mí. El proyecto: Vitaliplay, una plataforma deportiva en línea para personas mayores. Me encargo de la parte front-end y elijo usar la stack React.",
+				"text": "Primera misión freelance para un cliente que finalmente me paga. Synerg'hetic, una asociación en HETIC, que ofrece misiones a sus estudiantes, confía en mí. El proyecto: Vitaliplay, una plataforma deportiva en línea para personas mayores. Me encargo de la parte front-end y elijo usar la stack React.",
 				"technologies": ["Next.js", "Taiwind"]
 			},
 			{
 				"date": "01/01/2022",
 				"title": "enero 2022",
-				"text": "Trabajo para un cliente que tiene como proyecto crear una red social centrada en las competencias profesionales de los usuarios, especialmente dirigida a desarrolladores y diseñadores.",
+				"text": "Trabajo para un cliente cuyo proyecto es crear una red social centrada en las habilidades profesionales de los usuarios, dirigida especialmente a desarrolladores y diseñadores.",
+				"link": "https://byoss.me",
 				"technologies": ["React.js", "Taiwind"]
 			},
 			{
 				"date": "04/01/2022",
 				"title": "abril 2022",
 				"text": "Creación de un RPG en navegador en grupo como parte de un proyecto escolar. El resultado impresiona a toda la promoción.",
-				"technologies": ["HTML", "CSS", "Javascript"],
+				"technologies": ["HTML", "CSS", "JavaScript"],
 				"members": [
 					{
 						"name": "Arthur",
@@ -159,18 +160,55 @@
 			{
 				"date": "08/01/2022",
 				"title": "agosto 2022",
-				"text": "Inicio de mis prácticas en Radio France."
+				"text": "Inicio de mi alternancia en Radio France. Mi misión: integrar los nuevos componentes del Sistema de Diseño. Tengo suerte, tengo la oportunidad de trabajar con mi stack favorita: Svelte",
+				"link": "https://www.radiofrance.fr",
+				"technologies": ["SvelteKit", "TypeScript", "GraphQL"]
+			},
+			{
+				"date": "11/01/2022",
+				"title": "noviembre 2022",
+				"text": "Creación del sitio web de mi padre, que trabaja en la construcción.",
+				"link": "https://tvti.fr",
+				"technologies": ["SvelteKit", "TypeScript"]
+			},
+			{
+				"date": "02/01/2023",
+				"title": "febrero 2023",
+				"text": "Byoss me contacta nuevamente para la nueva UI de su red social para desarrolladores y diseñadores.",
+				"link": "https://byoss.me",
+				"technologies": ["React.js", "Tailwind", "GraphQL"]
+			},
+			{
+				"date": "09/01/2023",
+				"title": "septiembre 2023",
+				"text": "Creación de una tienda de comercio electrónico para un amigo que vende cartas Pokémon",
+				"link": "https://miragetcg.com",
+				"technologies": ["Shopify"]
+			},
+			{
+				"date": "07/01/2024",
+				"title": "julio 2024",
+				"text": "Inicio del desarrollo de Shopiette. La idea: un kit de herramientas que permita desarrollar aplicaciones de comercio electrónico con SvelteKit y Tailwind. Por ahora, he hecho más un POC para ver cómo construir el proyecto, pero en el futuro planeo crear un SDK que permita interactuar con los datos de una tienda Shopify, un kit de UI construido con Tailwind, que agrupa bloques y componentes para el comercio electrónico, así como un CLI para conectar ambos y generar un tema a medida.",
+				"link": "https://github.com/bdauphouy/shopiette",
+				"technologies": ["SvelteKit", "TypeScript", "Tailwind", "Shopify", "GraphQL"]
+			},
+			{
+				"date": "08/01/2024",
+				"title": "agosto 2024",
+				"text": "Actualización de mi portafolio. Decido cambiar de stack, pasando de React a Svelte. Un poco de frescura, más rendimiento, accesibilidad, internacionalización y una mejor experiencia de usuario.",
+				"link": "https://bdau.fr",
+				"technologies": ["SvelteKit", "TypeScript", "Tailwind"]
 			},
 			{
 				"date": "09/01/2024",
 				"title": "Hoy",
-				"text": "Contenido próximamente."
+				"text": "Mi alternancia en Radio France termina a finales de septiembre. Estoy preparando mi mudanza a Valencia en España y buscando un puesto de desarrollador full-stack en remoto para principios de octubre."
 			}
 		]
 	},
 	"contact": {
 		"title": "Contacto",
-		"subtitle": "¿Te gustó mi presentación y quieres trabajar conmigo? Contáctame por correo electrónico o a través de mis redes sociales."
+		"subtitle": "¿Te ha gustado mi presentación y quieres trabajar conmigo? Contáctame por correo electrónico o a través de mis redes sociales."
 	},
 	"footer": {
 		"text": "Hecho con Svelte y amor por Baptiste Dauphouy.",

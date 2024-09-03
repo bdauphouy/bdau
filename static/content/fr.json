@@ -188,7 +188,7 @@
 			{
 				"date": "07/01/2024",
 				"title": "juillet 2024",
-				"text": "Début du développement de Shopiette. L'idée : un kit d'outils permettant de développer des applications e-commerce avec SvelteKit et Tailwind. Pour l'instant, j'ai plus fait un POC afin de voir comment construire le projet, mais dans le futur j'ai prévu de créer un SDK permettant d'intéragir avec les données d'une boutique Shopify, un UI kit construit avec Tailwind, regroupant des blocs et de composants pour le e-commerce, ainsi qu'un CLI pour relier les deux et générer un thème sur mesure.",
+				"text": "Début du développement de Shopiette. L'idée : un kit d'outils permettant de développer des applications e-commerce avec SvelteKit et Tailwind. Pour l'instant, j'ai plus fait un POC afin de voir comment construire le projet, mais dans le futur j'ai prévu de créer un SDK permettant d'intéragir avec les données d'une boutique Shopify, un UI kit construit avec Tailwind, regroupant des blocs et des composants pour le e-commerce, ainsi qu'un CLI pour relier les deux et générer un thème sur mesure.",
 				"link": "https://github.com/bdauphouy/shopiette",
 				"technologies": ["SvelteKit", "TypeScript", "Tailwind", "Shopify", "GraphQL"]
 			},

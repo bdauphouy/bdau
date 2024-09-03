@@ -121,12 +121,16 @@
 		class="fill-none stroke-secondary"
 	/>
 	{#each items as _, i}
+		<!-- svelte-ignore a11y-missing-attribute -->
 		<a
-			href="#{i}"
-			class="group focus-visible:outline-none"
+			class="group cursor-pointer focus-visible:outline-none"
 			on:click|preventDefault={() => handlePointClick(i)}
 		>
-			<circle id="point-{i}" r="0.1" class="fill-secondary group-focus-visible:fill-blue-500" />
+			<circle
+				id="point-{i}"
+				r="0.1"
+				class="fill-secondary transition-colors duration-300 group-hover:fill-secondary/60 group-focus-visible:fill-blue-500"
+			/>
 		</a>
 	{/each}
 </svg>

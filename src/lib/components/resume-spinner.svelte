@@ -66,7 +66,7 @@
 		class="absolute left-0 top-0 flex h-full w-full rotate-90 items-center justify-center rounded-full text-2xl transition-[transform,_color] duration-300 hover:rotate-0 hover:text-secondary/60 focus-visible:text-secondary/60 md:text-3xl"
 		on:mouseenter={handleMouseEnter}
 		on:mouseleave={handleMouseLeave}
-		on:focus-visible={handleMouseEnter}
+		on:focus={handleMouseEnter}
 		on:blur={handleMouseLeave}
 	>
 		&RightArrow;
