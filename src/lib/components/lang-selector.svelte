@@ -16,7 +16,7 @@
 
 <select
 	on:change={handleChange}
-	class="cursor-pointer rounded-full bg-transparent text-lg font-medium transition-colors duration-300 hover:text-secondary/60 focus:text-secondary/60"
+	class="cursor-pointer rounded-full bg-transparent text-lg font-medium transition-colors duration-300 hover:text-secondary/60 focus-visible:text-secondary/60"
 >
 	{#each options as option}
 		<option value={option} selected={defaultOption === option}>{option}</option>

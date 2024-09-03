@@ -15,7 +15,7 @@
 <header class="mx-auto flex max-w-7xl items-start justify-between p-6 md:px-12 md:pt-10">
 	<a
 		href="/"
-		class="h-12 w-12 origin-top-left overflow-hidden rounded-full text-secondary transition-colors duration-300 hover:text-secondary/60 focus:text-secondary/60"
+		class="h-12 w-12 origin-top-left overflow-hidden rounded-full text-secondary transition-colors duration-300 hover:text-secondary/60 focus-visible:text-secondary/60"
 	>
 		<svg viewBox="0 0 348 348" xmlns="http://www.w3.org/2000/svg">
 			<path

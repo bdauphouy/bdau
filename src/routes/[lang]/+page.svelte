@@ -74,7 +74,7 @@
 	<meta name="keywords" content={data.content.globals.meta.keywords} />
 </svelte:head>
 
-<section class="flex justify-start pb-12 pt-20 md:justify-center md:py-[10vh]">
+<section id="landing-section" class="flex justify-start pb-12 pt-20 md:justify-center md:py-[10vh]">
 	<div class="flex flex-col gap-8">
 		{#if data.content.landing.badges && data.content.landing.badges.length > 0}
 			<ul class="flex flex-wrap items-center gap-4">
@@ -132,6 +132,7 @@
 		/>
 	{/if}
 	<div
+		id="timeline-content"
 		class="flex h-2/5 max-w-md flex-col justify-end gap-8 transition-colors duration-300 md:max-w-lg lg:h-auto lg:justify-start lg:gap-12"
 	>
 		{#key currentTimelineItemIndex}
@@ -216,7 +217,7 @@
 		</h3>
 		<div class="mt-10 flex flex-col items-start gap-2 border-b-4 border-secondary/20 pb-6">
 			<a
-				class="rounded-full text-3xl font-medium transition-colors duration-300 hover:text-secondary/80 focus:text-secondary/80 lg:text-4xl"
+				class="rounded-full text-3xl font-medium transition-colors duration-300 hover:text-secondary/80 focus-visible:text-secondary/80 lg:text-4xl"
 				href={`mailto:${data.content.globals.email}`}
 			>
 				{data.content.globals.email}

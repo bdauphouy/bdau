@@ -12,6 +12,33 @@
 	const dispatch = createEventDispatcher();
 
 	let pointsPositions: number[] = [];
+	let beforeTimelineOffsetHeight = 0;
+	let timelineSection: HTMLElement;
+
+	const getPointPosition = (date: string) => {
+		const dateInMs = new Date(date).getTime();
+		const firstDateInMs = new Date(items[0].date).getTime();
+		const lastDateInMs = new Date(items[items.length - 1].date).getTime();
+
+		return Math.floor(((dateInMs - firstDateInMs) / (lastDateInMs - firstDateInMs)) * 50) / 50;
+	};
+
+	const getAllPointsPositions = () => {
+		for (const item of items) {
+			pointsPositions = [...pointsPositions, getPointPosition(item.date)];
+		}
+	};
+
+	const getBeforeTimelineOffsetHeight = () => {
+		timelineSection = document.querySelector('#timeline-section')!;
+		const sections = document.querySelectorAll('section');
+
+		for (const section of sections) {
+			if (section === timelineSection) break;
+
+			beforeTimelineOffsetHeight += section.offsetHeight;
+		}
+	};
 
 	const handlePicturePathFollowing = () => {
 		let roundedProgress = 0;
@@ -61,24 +88,21 @@
 		}
 	};
 
-	const getPointPosition = (date: string) => {
-		const dateInMs = new Date(date).getTime();
-		const firstDateInMs = new Date(items[0].date).getTime();
-		const lastDateInMs = new Date(items[items.length - 1].date).getTime();
-
-		return Math.floor(((dateInMs - firstDateInMs) / (lastDateInMs - firstDateInMs)) * 50) / 50;
-	};
-
-	const getAllPointsPositions = () => {
-		for (const item of items) {
-			pointsPositions = [...pointsPositions, getPointPosition(item.date)];
-		}
+	const handlePointClick = (i: number) => {
+		scrollTo({
+			top:
+				pointsPositions[i] * (innerHeight * 10 + timelineSection.offsetTop) +
+				beforeTimelineOffsetHeight,
+			left: 0,
+			behavior: 'smooth'
+		});
 	};
 
 	onMount(() => {
 		getAllPointsPositions();
-		handlePicturePathFollowing();
 		handleItemPointsPlacing();
+		getBeforeTimelineOffsetHeight();
+		handlePicturePathFollowing();
 	});
 </script>
 
@@ -97,6 +121,12 @@
 		class="fill-none stroke-secondary"
 	/>
 	{#each items as _, i}
-		<circle id="point-{i}" r="0.1" class="fill-secondary" />
+		<a
+			href="#{i}"
+			class="group focus-visible:outline-none"
+			on:click|preventDefault={() => handlePointClick(i)}
+		>
+			<circle id="point-{i}" r="0.1" class="fill-secondary group-focus-visible:fill-blue-500" />
+		</a>
 	{/each}
 </svg>

@@ -10,8 +10,8 @@ select {
 	outline: none;
 }
 
-a:focus,
-button:focus,
-select:focus {
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
 	outline: 2px solid #3b82f6;
 }

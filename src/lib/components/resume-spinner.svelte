@@ -46,13 +46,13 @@
 			transform="translate(70, 70)"
 		/>
 		<text
-			class="text-md fill-secondary font-medium tracking-wide transition-[letter-spacing,_fill] group-focus-within:fill-secondary/60 group-hover:fill-secondary/60 group-hover:tracking-widest"
+			class="text-md group-focus-visible-within:fill-secondary/60 fill-secondary font-medium tracking-wide transition-[letter-spacing,_fill] group-hover:fill-secondary/60 group-hover:tracking-widest"
 		>
 			<textPath href="#text-diameter">
 				<tspan>
 					{text}
 					<tspan
-						class="firefox:group-hover:invisible transition-opacity duration-300 group-focus-within:opacity-0 group-hover:opacity-0"
+						class="group-focus-visible-within:opacity-0 transition-opacity duration-300 group-hover:opacity-0 firefox:group-hover:invisible"
 					>
 						&nbsp; - &nbsp;{text}
 					</tspan>
@@ -63,10 +63,10 @@
 	<a
 		href={url}
 		download="Baptiste DAUPHOUY.pdf"
-		class="absolute left-0 top-0 flex h-full w-full rotate-90 items-center justify-center rounded-full text-2xl transition-[transform,_color] duration-300 hover:rotate-0 hover:text-secondary/60 focus:text-secondary/60 md:text-3xl"
+		class="absolute left-0 top-0 flex h-full w-full rotate-90 items-center justify-center rounded-full text-2xl transition-[transform,_color] duration-300 hover:rotate-0 hover:text-secondary/60 focus-visible:text-secondary/60 md:text-3xl"
 		on:mouseenter={handleMouseEnter}
 		on:mouseleave={handleMouseLeave}
-		on:focus={handleMouseEnter}
+		on:focus-visible={handleMouseEnter}
 		on:blur={handleMouseLeave}
 	>
 		&RightArrow;
