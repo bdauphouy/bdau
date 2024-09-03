@@ -10,7 +10,7 @@
 	<div class="relative bg-primary">
 		{#if project.badges && project.badges.length > 0}
 			<ul
-				class="group-focus-visible-within:opacity-0 absolute right-0 top-0 z-10 m-3 flex flex-wrap items-center gap-2 opacity-100 transition-opacity duration-300 group-hover:opacity-0"
+				class="absolute right-0 top-0 z-10 m-3 flex flex-wrap items-center gap-2 opacity-100 transition-opacity duration-300 group-focus-within:opacity-0 group-hover:opacity-0"
 			>
 				{#each project.badges as badge}
 					<li>
@@ -20,13 +20,13 @@
 			</ul>
 		{/if}
 		<img
-			class="group-focus-visible-within:opacity-25 group-focus-visible-within:blur-sm transition-all duration-300 group-hover:opacity-25 group-hover:blur-sm"
+			class="transition-all duration-300 group-focus-within:opacity-25 group-focus-within:blur-sm group-hover:opacity-25 group-hover:blur-sm"
 			src="/images/projects/{project.id}.png"
 			alt={project.title}
 		/>
 	</div>
 	<div
-		class="focus-visible-within:opacity-100 absolute inset-0 left-0 top-0 z-20 flex h-full w-full cursor-pointer flex-col justify-center gap-1 px-5 py-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+		class="absolute inset-0 left-0 top-0 z-20 flex h-full w-full cursor-pointer flex-col justify-center gap-1 px-5 py-3 opacity-0 transition-opacity duration-300 focus-within:opacity-100 group-hover:opacity-100"
 	>
 		<h2 class="text-lg font-medium text-secondary">{project.title}</h2>
 		<p class="w-4/5 text-sm text-secondary/60">{project.description}</p>

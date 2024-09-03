@@ -121,8 +121,9 @@
 		class="fill-none stroke-secondary"
 	/>
 	{#each items as _, i}
-		<!-- svelte-ignore a11y-missing-attribute -->
+		<!-- svelte-ignore a11y-invalid-attribute -->
 		<a
+			href="#"
 			class="group cursor-pointer focus-visible:outline-none"
 			on:click|preventDefault={() => handlePointClick(i)}
 		>
