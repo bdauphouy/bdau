@@ -120,7 +120,7 @@
 
 <section
 	id="timeline-section"
-	class="flex h-screen flex-col-reverse justify-start gap-12 py-6 md:gap-20 md:py-12 lg:grid lg:h-auto lg:grid-cols-2 lg:py-32"
+	class="flex h-screen flex-col-reverse justify-start gap-12 py-32 pt-6 md:gap-20 md:pt-12 lg:grid lg:h-auto lg:grid-cols-2"
 >
 	{#if isTimelineItemContentExpanded}
 		<TimelineContent
