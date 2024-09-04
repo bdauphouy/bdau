@@ -103,6 +103,7 @@
 				"date": "06/01/2020",
 				"title": "junio 2020",
 				"text": "Encuentro a mi primer cliente dispuesto a pagarme para desarrollar su sitio: Flexomatic. Finalmente, nunca me pagó :(",
+				"link": "https://archives.flexomatic.bdau.fr",
 				"technologies": ["HTML", "CSS", "JavaScript"]
 			},
 			{
@@ -134,6 +135,7 @@
 				"title": "abril 2022",
 				"text": "Creación de un RPG en navegador en grupo como parte de un proyecto escolar. El resultado impresiona a toda la promoción.",
 				"technologies": ["HTML", "CSS", "JavaScript"],
+				"link": "https://wanned.fun",
 				"members": [
 					{
 						"name": "Arthur",
