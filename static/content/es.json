@@ -162,7 +162,7 @@
 			{
 				"date": "08/01/2022",
 				"title": "agosto 2022",
-				"text": "Inicio de mi alternancia en Radio France. Mi misión: integrar los nuevos componentes del Sistema de Diseño. Tengo suerte, tengo la oportunidad de trabajar con mi stack favorita: Svelte",
+				"text": "Inicio de mis prácticas en Radio France. Mi misión: integrar los nuevos componentes del Sistema de Diseño. Tengo suerte, tengo la oportunidad de trabajar con mi stack favorita: Svelte",
 				"link": "https://www.radiofrance.fr",
 				"technologies": ["SvelteKit", "TypeScript", "GraphQL"]
 			},
@@ -204,7 +204,7 @@
 			{
 				"date": "09/01/2024",
 				"title": "Hoy",
-				"text": "Mi alternancia en Radio France termina a finales de septiembre. Estoy preparando mi mudanza a Valencia en España y buscando un puesto de desarrollador full-stack en remoto para principios de octubre."
+				"text": "Mis prácticas en Radio France terminan a finales de septiembre. Estoy preparando mi mudanza a Valencia en España y buscando un puesto de desarrollador full-stack en remoto para principios de octubre."
 			}
 		]
 	},
