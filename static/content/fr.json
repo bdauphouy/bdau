@@ -103,12 +103,14 @@
 				"date": "06/01/2020",
 				"title": "juin 2020",
 				"text": "Je trouve mon premier client qui est prêt à me payer pour que je lui développe son site : Flexomatic. Finalement, il ne m'a jamais payé :(",
+				"link": "https://archives.flexomatic.bdau.fr",
 				"technologies": ["HTML", "CSS", "Javascript"]
 			},
 			{
 				"date": "05/01/2021",
 				"title": "mai 2021",
 				"text": "Création de mon premier portfolio \"sérieux\" et achat de mon domaine bdph.me (que je ne possède plus).",
+				"link": "https://old.bdau.fr",
 				"technologies": ["React.js", "Styled Components"]
 			},
 			{
@@ -120,6 +122,7 @@
 				"date": "11/01/2021",
 				"title": "novembre 2021",
 				"text": "Première mission freelance pour un client qui me paye enfin ! Synerg'hetic, une association au d'HETIC, proposant des missions à ses étudiants, me fait confiance. Le projet : Vitaliplay, une plateforme de sport en ligne pour les seniors. Je m'occupe de la partie front-end et choisis d'utiliser la stack React.",
+				"link": "https://vitaliplay.fr",
 				"technologies": ["Next.js", "Taiwind"]
 			},
 			{
@@ -134,6 +137,7 @@
 				"title": "avril 2022",
 				"text": "Création d'un RPG sur navigateur en groupe dans le cadre d'une projet d'école. Le résultat bluffe toute la promo.",
 				"technologies": ["HTML", "CSS", "Javascript"],
+				"link": "https://wanned.fun",
 				"members": [
 					{
 						"name": "Arthur",

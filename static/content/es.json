@@ -110,6 +110,7 @@
 				"date": "05/01/2021",
 				"title": "mayo 2021",
 				"text": "Creación de mi primer portafolio \"serio\" y compra de mi dominio bdph.me (que ya no poseo).",
+				"link": "https://old.bdau.fr",
 				"technologies": ["React.js", "Styled Components"]
 			},
 			{
@@ -121,6 +122,7 @@
 				"date": "11/01/2021",
 				"title": "noviembre 2021",
 				"text": "Primera misión freelance para un cliente que finalmente me paga. Synerg'hetic, una asociación en HETIC, que ofrece misiones a sus estudiantes, confía en mí. El proyecto: Vitaliplay, una plataforma deportiva en línea para personas mayores. Me encargo de la parte front-end y elijo usar la stack React.",
+				"link": "https://vitaliplay.fr",
 				"technologies": ["Next.js", "Taiwind"]
 			},
 			{
