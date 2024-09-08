@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Badge from '$lib/components/badge.svelte';
+	import ResumeSpinner from '$lib/components/landing/resume-spinner.svelte';
 	import type { Lang, PageContent, PageGlobals } from '$lib/types';
-	import ResumeSpinner from '../landing/resume-spinner.svelte';
 
 	export let content: PageContent['landing'] & { globals: PageGlobals; lang: Lang };
 </script>

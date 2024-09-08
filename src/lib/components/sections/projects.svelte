@@ -1,8 +1,26 @@
 <script lang="ts">
 	import Project from '$lib/components/projects/project.svelte';
 	import type { PageContent } from '$lib/types';
+	import { gsap } from 'gsap';
+	import { onMount } from 'svelte';
 
 	export let content: PageContent['projects'];
+
+	onMount(() => {
+		gsap.fromTo(
+			'#projects-section li',
+			{
+				opacity: 0,
+				y: 20
+			},
+			{
+				opacity: 1,
+				y: 0,
+				stagger: 0.03,
+				ease: 'power2.out'
+			}
+		);
+	});
 </script>
 
 <section id="projects-section" class="py-12 md:py-[10vh]">

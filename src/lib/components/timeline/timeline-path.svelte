@@ -1,11 +1,7 @@
 <script lang="ts">
 	import type { TimelineItem } from '$lib/types';
 	import { gsap } from 'gsap';
-	import { MotionPathPlugin } from 'gsap/dist/MotionPathPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { createEventDispatcher, onMount } from 'svelte';
-
-	gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 	export let items: TimelineItem[];
 
