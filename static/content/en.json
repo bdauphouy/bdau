@@ -1,7 +1,15 @@
 {
 	"meta": {
-		"title": "Baptiste Dauphouy • Portfolio",
-		"description": "Hello, I am Baptiste Dauphouy, a full-stack developer."
+		"portfolio": {
+			"title": "Baptiste Dauphouy • Portfolio",
+			"description": "Hello, I am Baptiste Dauphouy, a full-stack developer.",
+			"keywords": "baptiste dauphouy, portfolio"
+		},
+		"archives": {
+			"title": "Baptiste Dauphouy • Archives",
+			"description": "Discover the archives of my past projects.",
+			"keywords": "baptiste dauphouy, archives"
+		}
 	},
 	"landing": {
 		"title": "Hello,\nI am Baptiste Dauphouy,\na full-stack developer.",
@@ -216,6 +224,144 @@
 	},
 	"footer": {
 		"text": "Made with Svelte and love by Baptiste Dauphouy.",
-		"lastUpdateTitle": "Last updated on"
-	}
+		"lastUpdateTitle": "Last updated on",
+		"archivesTitle": "Archives"
+	},
+	"archives": [
+		{
+			"id": "azura",
+			"title": "Azura",
+			"description": "A website for the Minecraft server Azura.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/azura"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.azura.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "car-collective",
+			"title": "Car Collective",
+			"description": "A website for the Car Collective NFT collection.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/car-collective"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.car-collective.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "flexomatic",
+			"title": "Flexomatic",
+			"description": "A showcase website for Flexomatic.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/flexomatic"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.flexomatic.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "hetic-et-tac",
+			"title": "Hetic et Tac",
+			"description": "A showcase website to teach the basics of HTML/CSS.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/hetic-et-tac"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.hetic-et-tac.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "mastermind",
+			"title": "Mastermind",
+			"description": "A school project for the Mastermind game.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/mastermind"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.mastermind.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "mayflower",
+			"title": "Mayflower",
+			"description": "A website for the MFF crypto token.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/mayflower"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.mayflower.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "portfolio",
+			"title": "Old portfolio",
+			"description": "My first serious portfolio.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/portfolio"
+				},
+				{
+					"title": "View website",
+					"url": "https://old.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "superchat",
+			"title": "Superchat",
+			"description": "The showcase of a chat application. One of my oldest projects.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/superchat"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.superchat.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "wanned",
+			"title": "Wanned",
+			"description": "A browser-based RPG. The most complete and fun school project from my HETIC course.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/wanned"
+				},
+				{
+					"title": "View website",
+					"url": "https://archives.wanned.bdau.fr"
+				}
+			]
+		}
+	]
 }

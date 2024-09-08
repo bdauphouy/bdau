@@ -1,7 +1,15 @@
 {
 	"meta": {
-		"title": "Baptiste Dauphouy • Portfolio",
-		"description": "Bonjour, je suis Baptiste Dauphouy, développeur full-stack."
+		"portfolio": {
+			"title": "Baptiste Dauphouy • Portfolio",
+			"description": "Bonjour, je suis Baptiste Dauphouy, développeur full-stack.",
+			"keywords": "baptiste dauphouy, portfolio"
+		},
+		"archives": {
+			"title": "Baptiste Dauphouy • Archives",
+			"description": "Découvrez les archives de mes anciens projets.",
+			"keywords": "baptiste dauphouy, archives"
+		}
 	},
 	"landing": {
 		"title": "Bonjour,\nje suis Baptiste Dauphouy,\ndéveloppeur full-stack.",
@@ -217,6 +225,144 @@
 	},
 	"footer": {
 		"text": "Fait avec Svelte et amour par Baptiste Dauphouy.",
-		"lastUpdateTitle": "Mis à jour le"
-	}
+		"lastUpdateTitle": "Mis à jour le",
+		"archivesTitle": "Archives"
+	},
+	"archives": [
+		{
+			"id": "azura",
+			"title": "Azura",
+			"description": "Un site pour le serveur Minecraft Azura.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/azura"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.azura.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "car-collective",
+			"title": "Car Collective",
+			"description": "Un site pour la collection de NFTs Car Collective.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/car-collective"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.car-collective.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "flexomatic",
+			"title": "Flexomatic",
+			"description": "Un site vitrine pour Flexomatic.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/flexomatic"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.flexomatic.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "hetic-et-tac",
+			"title": "Hetic et Tac",
+			"description": "Un site vitrine pour enseigner les bases de l'HTML/CSS.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/hetic-et-tac"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.hetic-et-tac.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "mastermind",
+			"title": "Mastermind",
+			"description": "Un projet d'école du jeu Mastermind.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/mastermind"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.mastermind.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "mayflower",
+			"title": "Mayflower",
+			"description": "Un site pour le token crypto MFF.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/mayflower"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.mayflower.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "portfolio",
+			"title": "Ancien portfolio",
+			"description": "Mon premier portfolio sérieux.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/portfolio"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://old.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "superchat",
+			"title": "Superchat",
+			"description": "La vitrine d'une application de chat. Un de mes plus anciens projets.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/superchat"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.superchat.bdau.fr"
+				}
+			]
+		},
+		{
+			"id": "wanned",
+			"title": "Wanned",
+			"description": "Un RPG sur navigateur. Le projet d'école le plus abouti et fun de mon cursus à HETIC.",
+			"links": [
+				{
+					"title": "Voir le Github",
+					"url": "https://github.com/bdauphouy/wanned"
+				},
+				{
+					"title": "Voir le site",
+					"url": "https://archives.wanned.bdau.fr"
+				}
+			]
+		}
+	]
 }

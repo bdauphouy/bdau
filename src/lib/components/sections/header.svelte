@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	export let languages: string[];
 	export let lang: string;
@@ -10,7 +11,7 @@
 
 		localStorage.setItem('lang', selectedOption);
 
-		goto(`/${selectedOption}`);
+		goto(`/${selectedOption}/${$page.url.pathname.split('/').slice(2).join('/')}`);
 	};
 </script>
 

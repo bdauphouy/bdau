@@ -4,6 +4,7 @@
 	import type { Project } from '$lib/types';
 
 	export let project: Project;
+	export let isArchive = false;
 </script>
 
 <div class="group relative overflow-hidden rounded-lg ring-2 ring-secondary/20">
@@ -19,11 +20,19 @@
 				{/each}
 			</ul>
 		{/if}
-		<img
+		<div
 			class="transition-all duration-300 group-focus-within:opacity-25 group-focus-within:blur-sm group-hover:opacity-25 group-hover:blur-sm"
-			src="/images/projects/{project.id}.png"
-			alt={project.title}
-		/>
+		>
+			{#if isArchive}
+				<div class="flex h-52 w-full items-center justify-center bg-primary">
+					<h3 class="text-2xl text-white">
+						{project.title}
+					</h3>
+				</div>
+			{:else}
+				<img src="/images/projects/{project.id}.png" alt={project.title} />
+			{/if}
+		</div>
 	</div>
 	<div
 		class="absolute inset-0 left-0 top-0 z-20 flex h-full w-full cursor-pointer flex-col justify-center gap-1 px-5 py-3 opacity-0 transition-opacity duration-300 focus-within:opacity-100 group-hover:opacity-100"

@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import type { Lang, PageContent, PageGlobals } from '$lib/types';
 
-	export let content: PageContent['meta'] & { globals: PageGlobals; lang: Lang };
+	export let content: PageContent['meta']['portfolio'] & { globals: PageGlobals; lang: Lang };
 </script>
 
 <svelte:head>
@@ -26,5 +26,5 @@
 	<meta property="twitter:url" content="https://{$page.url.host}/{content.lang}" />
 	<meta name="twitter:site" content={content.globals.meta.twitter} />
 	<meta name="twitter:creator" content={content.globals.meta.twitter} />
-	<meta name="keywords" content={content.globals.meta.keywords} />
+	<meta name="keywords" content={content.keywords} />
 </svelte:head>

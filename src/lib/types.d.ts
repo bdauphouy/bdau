@@ -32,10 +32,16 @@ export type Project = {
 	links?: Link[];
 };
 
+export type MetaTags = {
+	title: string;
+	description: string;
+	keywords: string;
+};
+
 export type PageContent = {
 	meta: {
-		title: string;
-		description: string;
+		portfolio: MetaTags;
+		archives: MetaTags;
 	};
 	landing: {
 		title: string;
@@ -61,7 +67,9 @@ export type PageContent = {
 	footer: {
 		text: string;
 		lastUpdateTitle: string;
+		archivesTitle: string;
 	};
+	archives: Project[];
 };
 
 export type PageGlobals = {
@@ -70,7 +78,6 @@ export type PageGlobals = {
 	meta: {
 		name: string;
 		twitter: string;
-		keywords: string;
 		theme: string;
 	};
 	socials: {
