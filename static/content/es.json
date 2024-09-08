@@ -18,10 +18,10 @@
 				"handle": "location",
 				"title": "Valencia, España"
 			}
-		]
-	},
-	"resume": {
-		"title": "Descargar mi CV"
+		],
+		"resume": {
+			"title": "Descargar mi CV"
+		}
 	},
 	"projects": [
 		{
@@ -185,7 +185,7 @@
 			{
 				"date": "09/01/2023",
 				"title": "septiembre 2023",
-				"text": "Creación de una tienda de comercio electrónico para un amigo que vende cartas Pokémon",
+				"text": "Creación de una tienda de comercio electrónico para un amigo que vende cartas Pokémon.",
 				"link": "https://miragetcg.com",
 				"technologies": ["Shopify"]
 			},

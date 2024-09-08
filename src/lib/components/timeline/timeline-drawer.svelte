@@ -1,8 +1,8 @@
 <script lang="ts">
+	import Badge from '$lib/components/badge.svelte';
+	import Button from '$lib/components/button.svelte';
 	import { createEventDispatcher, onDestroy, onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
-	import Badge from './badge.svelte';
-	import Button from './button.svelte';
 
 	export let currentTimelineItem;
 	export let technologiesTitle;

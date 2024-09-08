@@ -18,10 +18,10 @@
 				"handle": "location",
 				"title": "Valencia, Spain"
 			}
-		]
-	},
-	"resume": {
-		"title": "Download my Resume"
+		],
+		"resume": {
+			"title": "Download my Resume"
+		}
 	},
 	"projects": [
 		{

@@ -40,9 +40,9 @@ export type PageContent = {
 	landing: {
 		title: string;
 		badges?: Badge[];
-	};
-	resume: {
-		title: string;
+		resume: {
+			title: string;
+		};
 	};
 	projects: Project[];
 	timeline: {
@@ -71,6 +71,7 @@ export type PageGlobals = {
 		name: string;
 		twitter: string;
 		keywords: string;
+		theme: string;
 	};
 	socials: {
 		github: string;

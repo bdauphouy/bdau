@@ -1,7 +1,7 @@
 <script lang="ts">
+	import Badge from '$lib/components/badge.svelte';
+	import Button from '$lib/components/button.svelte';
 	import type { Project } from '$lib/types';
-	import Badge from './badge.svelte';
-	import Button from './button.svelte';
 
 	export let project: Project;
 </script>

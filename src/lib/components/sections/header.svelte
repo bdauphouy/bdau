@@ -1,18 +1,20 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import LangSelector from './lang-selector.svelte';
 
 	export let languages: string[];
 	export let lang: string;
 
-	const handleLangChange = (event: CustomEvent<string>) => {
-		localStorage.setItem('lang', event.detail);
+	const handleLangChange = (event: Event) => {
+		const select = event.target as HTMLSelectElement;
+		const selectedOption = select.options[select.selectedIndex].value;
 
-		goto(`/${event.detail}`);
+		localStorage.setItem('lang', selectedOption);
+
+		goto(`/${selectedOption}`);
 	};
 </script>
 
-<header class="mx-auto flex max-w-7xl items-start justify-between p-6 md:px-12 md:pt-10">
+<header class="flex items-start justify-between p-6 md:px-12 md:pt-10">
 	<a
 		href="/"
 		class="h-12 w-12 origin-top-left overflow-hidden rounded-full text-secondary transition-colors duration-300 hover:text-secondary/60 focus-visible:text-secondary/60"
@@ -26,5 +28,12 @@
 			/>
 		</svg>
 	</a>
-	<LangSelector options={languages} defaultOption={lang} on:change={handleLangChange} />
+	<select
+		on:change={handleLangChange}
+		class="cursor-pointer rounded-full bg-transparent text-lg font-medium transition-colors duration-300 hover:text-secondary/60 focus-visible:text-secondary/60"
+	>
+		{#each languages as option}
+			<option value={option} selected={lang === option}>{option}</option>
+		{/each}
+	</select>
 </header>

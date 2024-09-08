@@ -18,11 +18,12 @@
 				"handle": "location",
 				"title": "Valencia, Espagne"
 			}
-		]
+		],
+		"resume": {
+			"title": "Télécharger mon CV"
+		}
 	},
-	"resume": {
-		"title": "Télécharger mon CV"
-	},
+
 	"projects": [
 		{
 			"id": "shopiette",
@@ -185,7 +186,7 @@
 			{
 				"date": "09/01/2023",
 				"title": "septembre 2023",
-				"text": "Création d'une boutique e-commerce pour un ami qui vend des cartes Pokémon",
+				"text": "Création d'une boutique e-commerce pour un ami qui vend des cartes Pokémon.",
 				"link": "https://miragetcg.com",
 				"technologies": ["Shopify"]
 			},

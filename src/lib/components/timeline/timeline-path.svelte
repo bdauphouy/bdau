@@ -124,7 +124,7 @@
 		<!-- svelte-ignore a11y-invalid-attribute -->
 		<a
 			href="#"
-			class="group cursor-pointer focus-visible:outline-none"
+			class="group hidden cursor-pointer focus-visible:outline-none lg:block"
 			on:click|preventDefault={() => handlePointClick(i)}
 		>
 			<circle
@@ -133,5 +133,10 @@
 				class="fill-secondary transition-colors duration-300 group-hover:fill-secondary/60 group-focus-visible:fill-blue-500"
 			/>
 		</a>
+		<circle
+			id="point-{i}"
+			r="0.1"
+			class="block fill-secondary transition-colors duration-300 group-hover:fill-secondary/60 group-focus-visible:fill-blue-500 lg:hidden"
+		/>
 	{/each}
 </svg>
