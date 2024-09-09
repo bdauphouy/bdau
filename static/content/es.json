@@ -1,9 +1,9 @@
 {
 	"meta": {
 		"portfolio": {
-			"title": "Baptiste Dauphouy • Portafolio",
+			"title": "Baptiste Dauphouy • Portfolio",
 			"description": "Hola, soy Baptiste Dauphouy, desarrollador full-stack.",
-			"keywords": "baptiste dauphouy, portafolio"
+			"keywords": "baptiste dauphouy, portfolio"
 		},
 		"archives": {
 			"title": "Baptiste Dauphouy • Archivos",
@@ -117,14 +117,14 @@
 			{
 				"date": "05/01/2021",
 				"title": "mayo 2021",
-				"text": "Creación de mi primer portafolio \"serio\" y compra de mi dominio bdph.me (que ya no poseo).",
+				"text": "Creación de mi primer portfolio \"serio\" y compra de mi dominio bdph.me (que ya no poseo).",
 				"link": "https://old.bdau.fr",
 				"technologies": ["React.js", "Styled Components"]
 			},
 			{
 				"date": "09/01/2021",
 				"title": "septiembre 2021",
-				"text": "Dejo mi pueblo para ir a París, me preparo para el comienzo del año escolar y hago los últimos ajustes en mi portafolio."
+				"text": "Dejo mi pueblo para ir a París, me preparo para el comienzo del año escolar y hago los últimos ajustes en mi portfolio."
 			},
 			{
 				"date": "11/01/2021",
@@ -207,7 +207,7 @@
 			{
 				"date": "08/01/2024",
 				"title": "agosto 2024",
-				"text": "Actualización de mi portafolio. Decido cambiar de stack, pasando de React a Svelte. Un poco de frescura, más rendimiento, accesibilidad, internacionalización y una mejor experiencia de usuario.",
+				"text": "Actualización de mi portfolio. Decido cambiar de stack, pasando de React a Svelte. Un poco de frescura, más rendimiento, accesibilidad, internacionalización y una mejor experiencia de usuario.",
 				"link": "https://bdau.fr",
 				"technologies": ["SvelteKit", "TypeScript", "Tailwind"]
 			},
@@ -320,8 +320,8 @@
 		},
 		{
 			"id": "portfolio",
-			"title": "Antiguo portafolio",
-			"description": "Mi primer portafolio serio.",
+			"title": "Antiguo portfolio",
+			"description": "Mi primer portfolio serio.",
 			"links": [
 				{
 					"title": "Ver el Github",
