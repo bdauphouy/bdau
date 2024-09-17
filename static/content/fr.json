@@ -130,14 +130,14 @@
 			{
 				"date": "11/01/2021",
 				"title": "novembre 2021",
-				"text": "Première mission freelance pour un client qui me paye enfin ! Synerg'hetic, une association au d'HETIC, proposant des missions à ses étudiants, me fait confiance. Le projet : Vitaliplay, une plateforme de sport en ligne pour les seniors. Je m'occupe de la partie front-end et choisis d'utiliser la stack React.",
+				"text": "Première mission freelance pour un client qui me paye enfin ! Synerg'hetic, une association au sein d'HETIC, proposant des missions à ses étudiants, me fait confiance. Le projet : Vitaliplay, une plateforme de sport en ligne pour les seniors. Je m'occupe de la partie front-end et choisis d'utiliser la stack React.",
 				"link": "https://vitaliplay.fr",
 				"technologies": ["Next.js", "Taiwind"]
 			},
 			{
 				"date": "01/01/2022",
 				"title": "janvier 2022",
-				"text": "Travail pour un client qui a comme projet de faire un réseaux social axé sur les compétences professionnelles des utilisateurs, adressé notamment aux développeurs et aux designers.",
+				"text": "Je travaille pour un client qui a comme projet de faire un réseaux social axé sur les compétences professionnelles des utilisateurs, adressé notamment aux développeurs et aux designers.",
 				"link": "https://byoss.me",
 				"technologies": ["React.js", "Taiwind"]
 			},
