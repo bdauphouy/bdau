@@ -28,7 +28,7 @@
 			}
 		],
 		"resume": {
-			"title": "Download my Resume"
+			"title": "Download my resume"
 		}
 	},
 	"projects": [
@@ -48,7 +48,7 @@
 					"url": "https://github.com/bdauphouy/shopiette"
 				},
 				{
-					"title": "View Website",
+					"title": "View website",
 					"url": "https://shopiette.bdau.fr"
 				}
 			]
@@ -63,7 +63,7 @@
 					"url": "https://github.com/bdauphouy/vintify"
 				},
 				{
-					"title": "View Website",
+					"title": "View website",
 					"url": "https://vintify.bdau.fr"
 				}
 			]
@@ -78,19 +78,19 @@
 					"url": "https://github.com/bdauphouy/vitaliplay"
 				},
 				{
-					"title": "View Website",
+					"title": "View website",
 					"url": "https://vitaliplay.fr"
 				}
 			]
 		}
 	],
 	"timeline": {
-		"technologiesTitle": "Technologies Used",
-		"membersTitle": "Project Members",
-		"linkTitle": "View Project",
-		"learnMoreTitle": "Learn More",
+		"technologiesTitle": "Technologies used",
+		"membersTitle": "Project members",
+		"linkTitle": "View project",
+		"learnMoreTitle": "Learn more",
 		"closeTitle": "Close",
-		"scrollToExploreTitle": "Scroll to Explore",
+		"scrollToExploreTitle": "Scroll to explore",
 		"items": [
 			{
 				"date": "09/01/2018",
