@@ -10,7 +10,21 @@ export const GET = () => {
 			xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
 			xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
 		>
-			<!-- <url> elements go here -->
+			<url>
+        <loc>https://bdau.fr/en</loc>
+        <lastmod>2024-09-25T14:57:24+00:00</lastmod>
+        <priority>1.00</priority>
+      </url>
+      <url>
+        <loc>https://bdau.fr/resumes/en.pdf</loc>
+        <lastmod>2024-09-25T14:57:24+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      <url>
+        <loc>https://bdau.fr/en/archives</loc>
+        <lastmod>2024-09-25T14:57:24+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
 		</urlset>`.trim(),
 		{
 			headers: {
