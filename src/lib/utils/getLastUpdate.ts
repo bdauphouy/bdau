@@ -13,5 +13,9 @@ export const getLastUpdate = async () => {
 
 	const data = await response.json();
 
+	if (data.deployments.length === 0) {
+		throw new Error('Vercel API error');
+	}
+
 	return new Date(data.deployments[0].ready);
 };
