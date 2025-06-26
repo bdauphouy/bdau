@@ -21,10 +21,6 @@
 			{
 				"handle": "unavailable",
 				"title": "Unavailable"
-			},
-			{
-				"handle": "location",
-				"title": "Valencia, Spain"
 			}
 		],
 		"resume": {
@@ -36,12 +32,7 @@
 			"id": "shopiette",
 			"title": "Shopiette",
 			"description": "Quickly create e-commerce websites with Svelte.",
-			"badges": [
-				{
-					"handle": "in-progress",
-					"title": "In progress"
-				}
-			],
+			"badges": [],
 			"links": [
 				{
 					"title": "View Github",
@@ -212,9 +203,19 @@
 				"technologies": ["SvelteKit", "TypeScript", "Tailwind"]
 			},
 			{
-				"date": "09/01/2024",
+				"date": "10/01/2024",
 				"title": "October 2024",
 				"text": "End of my internship at Radio France. I moved to Valencia in Spain and joined the Dotworld team. I'm finally free to work wherever I want."
+			},
+			{
+				"date": "02/01/2025",
+				"title": "February 2025",
+				"text": "Moving to Perpignan, I need to get my driver's license but I don't want to get away from the sun and warmth of Spain."
+			},
+			{
+				"date": "05/01/2025",
+				"title": "May 2025",
+				"text": "I got my license! I'm going to Malta to celebrate and I'm preparing my move to Playa del Carmen in Mexico. My client trusts me, I'm ready for new adventures."
 			}
 		]
 	},

@@ -103,7 +103,7 @@
 </script>
 
 <img
-	src="/images/timeline/me.png"
+	src="/images/timeline/me.jpg"
 	alt="Baptiste Dauphouy"
 	id="circle"
 	class="absolute h-6 w-6 rounded-full ring-2 ring-secondary/20 md:h-8 md:w-8"

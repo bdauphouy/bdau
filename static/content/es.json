@@ -21,10 +21,6 @@
 			{
 				"handle": "unavailable",
 				"title": "No disponible"
-			},
-			{
-				"handle": "location",
-				"title": "Valencia, España"
 			}
 		],
 		"resume": {
@@ -36,12 +32,7 @@
 			"id": "shopiette",
 			"title": "Shopiette",
 			"description": "Cree rápidamente sitios de comercio electrónico con Svelte.",
-			"badges": [
-				{
-					"handle": "in-progress",
-					"title": "En progreso"
-				}
-			],
+			"badges": [],
 			"links": [
 				{
 					"title": "Ver el Github",
@@ -215,6 +206,16 @@
 				"date": "10/01/2024",
 				"title": "Octubre 2024",
 				"text": "Fin de mis prácticas en Radio France. Me mudo a Valencia, España y me uno al equipo de Dotworld. Por fin soy libre para trabajar donde quiera."
+			},
+			{
+				"date": "02/01/2025",
+				"title": "Febrero 2025",
+				"text": "Mudanza a Perpiñán, debo sacar mi licencia de conducir pero no quiero alejarme del sol y el calor de España."
+			},
+			{
+				"date": "05/01/2025",
+				"title": "Mayo 2025",
+				"text": "¡Obtengo mi licencia! Me voy a Malta para celebrarlo y preparo mi mudanza a Playa del Carmen en México. Mi cliente confía en mí, estoy listo para nuevas aventuras."
 			}
 		]
 	},

@@ -3,7 +3,9 @@
 	import ResumeSpinner from '$lib/components/landing/resume-spinner.svelte';
 	import type { Lang, PageContent, PageGlobals } from '$lib/types';
 
-	export let content: PageContent['landing'] & { globals: PageGlobals; lang: Lang };
+	export let content: PageContent['landing'] & { globals: PageGlobals; lang: Lang } & {
+		location: string;
+	};
 </script>
 
 <section id="landing-section" class="flex justify-start pb-12 pt-20 md:justify-center md:py-[10vh]">
@@ -29,6 +31,7 @@
 						<Badge variant="secondary">{badge.title}</Badge>
 					{/if}
 				{/each}
+				<Badge variant="secondary">{content.location}</Badge>
 			</ul>
 		{/if}
 		<h1 class="text-5xl font-medium leading-tight md:whitespace-pre lg:text-6xl lg:leading-tight">

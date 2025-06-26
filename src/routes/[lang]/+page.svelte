@@ -37,7 +37,11 @@
 />
 
 <Landing
-	content={{ ...data.content.landing, ...{ globals: data.content.globals, lang: data.lang } }}
+	content={{
+		...data.content.landing,
+		...{ globals: data.content.globals, lang: data.lang },
+		location: data.location
+	}}
 />
 
 <Projects content={data.content.projects} />
