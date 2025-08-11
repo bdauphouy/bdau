@@ -12,7 +12,7 @@
 		}
 	},
 	"landing": {
-		"title": "Hago que su marca\nbrille en la web,\nde forma sostenible",
+		"title": "Hago que su marca\nbrille en la web,\nde forma sostenible.",
 		"badges": [
 			{
 				"handle": "available",
@@ -109,7 +109,7 @@
 			{
 				"date": "05/01/2021",
 				"title": "Mayo 2021",
-				"text": "Creación de mi primer portfolio \"serio\" y compra de mi dominio bdph.me (que ya no poseo).",
+				"text": "Creación de mi primer portfolio \"serio\" y compra de mi primer dominio bdph.me (que ya no poseo).",
 				"link": "https://old.bdau.fr",
 				"technologies": ["React.js", "Styled Components"]
 			},
@@ -137,7 +137,7 @@
 				"title": "Abril 2022",
 				"text": "Creación de un RPG en navegador en grupo como parte de un proyecto escolar. El resultado impresiona a toda la promoción.",
 				"technologies": ["HTML", "CSS", "JavaScript"],
-				"link": "https://wanned.fun",
+				"link": "https://archives.wanned.bdau.fr",
 				"members": [
 					{
 						"name": "Arthur",

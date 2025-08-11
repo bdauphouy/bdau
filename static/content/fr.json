@@ -110,7 +110,7 @@
 			{
 				"date": "05/01/2021",
 				"title": "Mai 2021",
-				"text": "Création de mon premier portfolio \"sérieux\" et achat de mon domaine bdph.me (que je ne possède plus).",
+				"text": "Création de mon premier portfolio \"sérieux\" et achat de mon premier domaine bdph.me (que je ne possède plus).",
 				"link": "https://old.bdau.fr",
 				"technologies": ["React.js", "Styled Components"]
 			},
@@ -138,7 +138,7 @@
 				"title": "Avril 2022",
 				"text": "Création d'un RPG sur navigateur en groupe dans le cadre d'une projet d'école. Le résultat bluffe toute la promo.",
 				"technologies": ["HTML", "CSS", "Javascript"],
-				"link": "https://wanned.fun",
+				"link": "https://archives.wanned.bdau.fr",
 				"members": [
 					{
 						"name": "Arthur",

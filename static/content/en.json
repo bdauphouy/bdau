@@ -12,7 +12,7 @@
 		}
 	},
 	"landing": {
-		"title": "I make your brand\nshine on the web,\nsustainably",
+		"title": "I make your brand\nshine on the web,\nsustainably.",
 		"badges": [
 			{
 				"handle": "available",
@@ -109,7 +109,7 @@
 			{
 				"date": "05/01/2021",
 				"title": "May 2021",
-				"text": "Created my first 'serious' portfolio and purchased my domain bdph.me (which I no longer own).",
+				"text": "Created my first 'serious' portfolio and purchased my first domain bdph.me (which I no longer own).",
 				"link": "https://old.bdau.fr",
 				"technologies": ["React.js", "Styled Components"]
 			},
@@ -137,7 +137,7 @@
 				"title": "April 2022",
 				"text": "Created a browser-based RPG with a group as part of a school project. The result impressed the whole class.",
 				"technologies": ["HTML", "CSS", "JavaScript"],
-				"link": "https://wanned.fun",
+				"link": "https://archives.wanned.bdau.fr",
 				"members": [
 					{
 						"name": "Arthur",
