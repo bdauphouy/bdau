@@ -12,7 +12,7 @@
 		}
 	},
 	"landing": {
-		"title": "Hello,\nI am Baptiste Dauphouy,\na full-stack developer.",
+		"title": "I make your brand\nshine on the web,\nsustainably",
 		"badges": [
 			{
 				"handle": "available",
@@ -29,33 +29,19 @@
 	},
 	"projects": [
 		{
-			"id": "shopiette",
-			"title": "Shopiette",
-			"description": "Quickly create e-commerce websites with Svelte.",
-			"badges": [],
-			"links": [
+			"id": "dotworld",
+			"title": "Dotworld",
+			"description": "Start your SaaS journey today.",
+			"badges": [
 				{
-					"title": "View Github",
-					"url": "https://github.com/bdauphouy/shopiette"
-				},
-				{
-					"title": "View website",
-					"url": "https://shopiette.bdau.fr"
+					"handle": "current",
+					"title": "Current"
 				}
-			]
-		},
-		{
-			"id": "vintify",
-			"title": "Vintify",
-			"description": "Easily import your Vinted products into Shopify.",
+			],
 			"links": [
 				{
-					"title": "View Github",
-					"url": "https://github.com/bdauphouy/vintify"
-				},
-				{
 					"title": "View website",
-					"url": "https://vintify.bdau.fr"
+					"url": "https://www.dotworld.ch"
 				}
 			]
 		},
@@ -71,6 +57,21 @@
 				{
 					"title": "View website",
 					"url": "https://vitaliplay.fr"
+				}
+			]
+		},
+		{
+			"id": "shopiette",
+			"title": "Shopiette",
+			"description": "Quickly create e-commerce websites with Svelte.",
+			"links": [
+				{
+					"title": "View Github",
+					"url": "https://github.com/bdauphouy/shopiette"
+				},
+				{
+					"title": "View website",
+					"url": "https://shopiette.bdau.fr"
 				}
 			]
 		}
