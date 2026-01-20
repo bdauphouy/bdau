@@ -32,12 +32,7 @@
 			"id": "dotworld",
 			"title": "Dotworld",
 			"description": "Comienza hoy tu camino en el SaaS.",
-			"badges": [
-				{
-					"handle": "current",
-					"title": "Actual"
-				}
-			],
+			"badges": [],
 			"links": [
 				{
 					"title": "Ver el sitio",
@@ -217,6 +212,11 @@
 				"date": "05/01/2025",
 				"title": "Mayo 2025",
 				"text": "¡Obtengo mi licencia! Me voy a Malta para celebrarlo y preparo mi mudanza a Playa del Carmen en México. Mi cliente confía en mí, estoy listo para nuevas aventuras."
+			},
+			{
+				"date": "01/01/2026",
+				"title": "Enero 2026",
+				"text": "¡Año nuevo, retos nuevos! Me mudo a Honduras y decido empezar a construir mi propio producto. Me apasiona la DeFi y quiero crear algo útil para la comunidad."
 			}
 		]
 	},

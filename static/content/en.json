@@ -32,12 +32,7 @@
 			"id": "dotworld",
 			"title": "Dotworld",
 			"description": "Start your SaaS journey today.",
-			"badges": [
-				{
-					"handle": "current",
-					"title": "Current"
-				}
-			],
+			"badges": [],
 			"links": [
 				{
 					"title": "View website",
@@ -217,6 +212,11 @@
 				"date": "05/01/2025",
 				"title": "May 2025",
 				"text": "I got my license! I'm going to Malta to celebrate and I'm preparing my move to Playa del Carmen in Mexico. My client trusts me, I'm ready for new adventures."
+			},
+			{
+				"date": "01/01/2026",
+				"title": "January 2026",
+				"text": "New year, new challenges! I move to Honduras and decide to start builing my own product. I'm passionate aboute DeFi and I want to create something useful for the community."
 			}
 		]
 	},

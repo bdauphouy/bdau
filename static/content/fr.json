@@ -32,12 +32,7 @@
 		{
 			"id": "dotworld",
 			"title": "Dotworld",
-			"badges": [
-				{
-					"handle": "current",
-					"title": "Actuel"
-				}
-			],
+			"badges": [],
 			"description": "Commencez votre aventure SaaS dès aujourd'hui.",
 			"links": [
 				{
@@ -218,6 +213,11 @@
 				"date": "05/01/2025",
 				"title": "Mai 2025",
 				"text": "J'obtiens mon permis! Je pars à Malte pour fêter ça et je prépare mon déménagement à Playa del Carmen au Mexique. Mon client me fait confiance, je suis prêt pour de nouvelles aventures."
+			},
+			{
+				"date": "01/01/2026",
+				"title": "Janvier 2026",
+				"text": "Nouvelle année, nouveaux défis ! Je déménage au Honduras et je décide de commencer à développer mon propre produit. Je suis passionné par la DeFi et je veux créer quelque chose d'utile pour la communauté."
 			}
 		]
 	},
